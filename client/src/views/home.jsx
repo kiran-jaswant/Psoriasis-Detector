@@ -1,9 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar';
 
 function Home() {
   return (
-    <div className='text-2xl'>hommmmmeeeeeeee</div>
+    <div>
+        <Navbar/>
+    </div>
   )
 }
 
-export default Home
+export default Home;
