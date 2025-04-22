@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import './../src/index.css'
-import Home from "./views/Home";
-import Login from "./components/Login";
-import Dashboard from "./views/Dashboard";
+import Home from "./views/Home.jsx";
+import Login from "./components/Login.jsx";
+import Dashboard from "./views/Dashboard.jsx";
 
 const root = document.getElementById("root");
 
