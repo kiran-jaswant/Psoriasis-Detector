@@ -1,5 +1,7 @@
 import React from 'react';
 import { User } from 'lucide-react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import Login from './Login';
 
 const Navbar = () => {
   return (
@@ -12,7 +14,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul className="flex space-x-8 font-semibold text-pink-900">
-          {[
+          {[ 
             { href: '/', label: 'Home', className: 'text-pink-500' },
             { href: '/about', label: 'About' },
             { href: '/consult', label: 'Consultation Plans' },
@@ -31,10 +33,12 @@ const Navbar = () => {
         </ul>
 
         {/* Login Button */}
-        <button className="flex items-center text-pink-500 hover:text-pink-700 transition-colors duration-200">
-          <User className="mr-2 h-5 w-5" />
-          Log In
-        </button>
+        <Link to="/login"> {/* Link to Login page */}
+          <button className="flex items-center text-pink-500 cursor-pointer hover:text-pink-700 transition-colors duration-200">
+            <User className="mr-2 h-5 w-5" />
+            Log In
+          </button>
+        </Link>
       </div>
     </nav>
   );

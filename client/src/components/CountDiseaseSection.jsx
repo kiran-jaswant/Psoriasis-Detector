@@ -1,14 +1,42 @@
 import React, { useState, useEffect, useRef } from 'react';
+import skincard1 from "./../assets/HomeImg/skincard1.jpg";
+import skincard2 from "./../assets/HomeImg/skincard2.jpg";
+import skincard3 from "./../assets/HomeImg/skincard3.jpg";
+import skincard4 from "./../assets/HomeImg/skincard4.jpg";
+
 
 const CountDiseaseSection = () => {
   const stats = [
-    { count: 22, label: 'Health Sections' },
-    { count: 146, label: 'Different Services' },
-    { count: 388, label: 'Blood Donations' },
-    { count: 1280, label: 'Satisfied Patients' },
+    {
+      count: 125,
+      suffix: 'M',
+      label: 'People Affected Worldwide',
+      description:
+        'An estimated 125 million people globally live with psoriasis, according to the World Psoriasis Day consortium.',
+    },
+    {
+      count: 80,
+      suffix: '%',
+      label: 'Experience Mild to Moderate Symptoms',
+      description:
+        'Most patients manage their psoriasis with topical treatments and lifestyle changes.',
+    },
+    {
+      count: 70,
+      suffix: '%',
+      label: 'Report Improvement with Biologics',
+      description:
+        'Advanced therapies like biologics have significantly improved quality of life for many moderate to severe cases.',
+    },
+    {
+      count: 30,
+      suffix: '%',
+      label: 'Develop Psoriatic Arthritis',
+      description:
+        'Around 30% of individuals with psoriasis eventually develop psoriatic arthritis, causing joint pain, stiffness, and swelling.',
+    },
   ];
 
-  // Custom hook for the count animation with time limit
   const useCountUp = (targetValue, isVisible) => {
     const [count, setCount] = useState(0);
 
@@ -18,12 +46,12 @@ const CountDiseaseSection = () => {
 
       if (isVisible) {
         interval = setInterval(() => {
-          setCount(prev => Math.min(prev + 1, targetValue));
+          setCount((prev) => Math.min(prev + 1, targetValue));
         }, 10);
 
         timeout = setTimeout(() => {
           clearInterval(interval);
-        }, 5000); // Stop counting after 5 seconds
+        }, 5000);
       }
 
       return () => {
@@ -35,7 +63,6 @@ const CountDiseaseSection = () => {
     return count;
   };
 
-  // Intersection Observer logic to trigger when the section is in view
   const observerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -44,7 +71,7 @@ const CountDiseaseSection = () => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is in view
+      { threshold: 0.5 }
     );
 
     if (observerRef.current) {
@@ -58,45 +85,57 @@ const CountDiseaseSection = () => {
     };
   }, []);
 
+  // Array for image paths
+  const imagePaths = [
+    skincard1,
+    skincard2,
+    skincard3,
+    skincard4,
+    skincard1,
+    skincard2,
+    skincard3,
+    skincard4, // duplicate images to have 8
+  ];
+
   return (
-    <div
-      ref={observerRef}
-      className="bg-pink-50 text-pink-900 py-16 px-6 overflow-hidden"
-    >
-      {/* Count section with white box behind number */}
+    <div ref={observerRef} className="bg-pink-50 text-pink-900 py-16 px-6 overflow-hidden">
+      {/* Stats Section */}
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-30 mt-15">
         {stats.map((item, index) => {
           const animatedCount = useCountUp(item.count, isVisible);
           return (
-            <div
-              key={index}
-              className="animate-fadeInUp delay-[200ms]"
-            >
-              <div className="flex justify-center mb-2">
-                <div
-                  className="bg-white px-7 py-7 rounded-xl shadow text-3xl font-bold text-pink-700 transform transition-transform duration-300 hover:scale-105 hover:bg-pink-200"
-                >
+            <div key={index} className="animate-fadeInUp delay-[200ms]">
+              <div className="bg-white w-27 h-23 mx-auto flex items-center justify-center rounded-xl shadow transform transition-transform duration-300 hover:scale-105 hover:bg-pink-200 mb-6">
+                <div className="text-3xl font-bold text-pink-700">
                   {animatedCount}
+                  {item.suffix && (
+                    <span className="text-xl text-pink-600 ml-1">
+                      {item.suffix}
+                    </span>
+                  )}
                 </div>
               </div>
-              <div className="text-xl font-medium">{item.label}</div>
-              <p className="text-lg text-pink-600 mt-1">
-                Ut wisi enim ad minim veniam, quis laore et iusto exerci tation.
-              </p>
+
+              <div className="text-2xl font-medium text-pink-600">{item.label}</div>
+              <p className="text-base text-gray-700 mt-2">{item.description}</p>
             </div>
           );
         })}
       </div>
 
-      {/* Images Grid */}
+      {/* Image Section with 8 images */}
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-        {Array.from({ length: 8 }).map((_, i) => (
+        {imagePaths.map((imgPath, i) => (
           <div
             key={i}
             className="bg-pink-200 rounded-lg overflow-hidden animate-zoomIn delay-[300ms]"
           >
-            <div className="aspect-square flex items-center justify-center text-pink-900 font-bold text-lg">
-              img{i + 1}
+            <div className="aspect-square flex items-center justify-center">
+              <img
+                src={imgPath} // Using the path from the imagePaths array
+                alt={`Image ${i + 1}`} // Alt text for accessibility
+                className="object-cover w-full h-full"
+              />
             </div>
           </div>
         ))}
