@@ -3,6 +3,10 @@ import skincard1 from "./../assets/HomeImg/skincard1.jpg";
 import skincard2 from "./../assets/HomeImg/skincard2.jpg";
 import skincard3 from "./../assets/HomeImg/skincard3.jpg";
 import skincard4 from "./../assets/HomeImg/skincard4.jpg";
+import skincard5 from "./../assets/HomeImg/skincard5.jpg";
+import skincard9 from "./../assets/HomeImg/skincard9.jpg";
+import skincard7 from "./../assets/HomeImg/skincard7.jpg";
+import skincard8 from "./../assets/HomeImg/skincard8.jpg";
 
 
 const CountDiseaseSection = () => {
@@ -88,13 +92,13 @@ const CountDiseaseSection = () => {
   // Array for image paths
   const imagePaths = [
     skincard1,
-    skincard2,
+    skincard5,
     skincard3,
+    skincard2,
+    skincard8,
+    skincard9,
     skincard4,
-    skincard1,
-    skincard2,
-    skincard3,
-    skincard4, // duplicate images to have 8
+    skincard7, // duplicate images to have 8
   ];
 
   return (
