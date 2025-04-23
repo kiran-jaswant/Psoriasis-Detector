@@ -110,10 +110,10 @@ const CountDiseaseSection = () => {
           return (
             <div key={index} className="animate-fadeInUp delay-[200ms]">
               <div className="bg-white w-27 h-23 mx-auto flex items-center justify-center rounded-xl shadow transform transition-transform duration-300 hover:scale-105 hover:bg-pink-200 mb-6">
-                <div className="text-3xl font-bold text-pink-700">
+                <div className="text-3xl font-bold text-black">
                   {animatedCount}
                   {item.suffix && (
-                    <span className="text-xl text-pink-600 ml-1">
+                    <span className="text-xl text-black ml-1">
                       {item.suffix}
                     </span>
                   )}

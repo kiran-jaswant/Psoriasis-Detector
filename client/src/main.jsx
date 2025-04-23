@@ -5,6 +5,8 @@ import './../src/index.css'
 import Home from "./views/Home.jsx";  
 import Login from "./components/Login.jsx";
 import Dashboard from "./views/Dashboard.jsx";
+import Contact from "./views/Contact.jsx";
+import About from './views/About.jsx'
 
 const root = document.getElementById("root");
 
@@ -14,6 +16,8 @@ ReactDOM.createRoot(root).render(
       <Route path="/" element={<Home/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="/about" element={<About/>} />
     </Routes>
   </BrowserRouter>
 );

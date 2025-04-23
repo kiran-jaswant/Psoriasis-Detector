@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-pink-50 px-4">
-  <div className="flex w-full max-w-4xl h-[500px] shadow-lg rounded-lg overflow-hidden">
+    <div>
+    <Navbar/>
+    <div className="min-h-screen flex items-center justify-center bg-pink-50 px-3">
+  <div className="flex w-full max-w-4xl h-[470px] shadow-lg rounded-lg overflow-hidden">
     {/* Form Section */}
     <div className="w-1/2 bg-white p-8">
       <h2 className="text-2xl font-semibold text-gray-800 mb-6">{isLogin ? 'Sign In' : 'Sign Up'}</h2>
@@ -69,8 +73,10 @@ const Login = () => {
     </div>
   </div>
 </div>
-
+<Footer/>
+</div>
   );
 };
+
 
 export default Login;

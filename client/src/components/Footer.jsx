@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="w-full md:w-1/3 text-center md:text-left">
             <h3 className="text-3xl font-semibold mb-4">Psoriasis Detection</h3>
             <p className="text-lg">
-              Empowering you with early detection and information about psoriasis to live a healthier life.
+              Empowering you with detection and information about psoriasis to live a healthier life.
             </p>
           </div>
 
@@ -24,8 +24,8 @@ const Footer = () => {
 
           <div className="w-full md:w-1/3 text-center">
             <h4 className="text-xl font-semibold mb-3">Contact Us</h4>
-            <p className="text-lg">Email: contact@psoriasesdetect.com</p>
-            <p className="text-lg">Phone: +123 456 7890</p>
+            <p className="text-lg">Email: psoriasisdetection@gmail.com</p>
+            <p className="text-lg">Phone: 999272727</p>
           </div>
         </div>
 
