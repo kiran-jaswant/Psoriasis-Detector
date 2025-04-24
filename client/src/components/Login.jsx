@@ -19,27 +19,32 @@ const Login = () => {
     const payload = {
       email,
       password,
-      ...(isLogin ? {} : { name, city }),
+      ...(isLogin ? {} : { name, city }), // Only add name and city on signup
     };
 
     try {
       const endpoint = isLogin ? '/login' : '/signup';
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}${endpoint}`, payload);
+      const apiUrl = `${import.meta.env.VITE_API_URL}${endpoint}`;
 
+      console.log("Requesting:", apiUrl);
+      console.log("Payload:", payload);
 
-      if (isLogin) {
-        localStorage.setItem('token', response.data.token);
-        toast.success('Login successful!');
-        setTimeout(() => {
-          navigate('/dashboard');
-        }, 1500);
+      const response = await axios.post(apiUrl, payload);
+
+      if (response.data.success) {
+        if (isLogin) {
+          toast.success('Login successful!');
+          navigate('/dashboard'); // Redirect to dashboard after successful login
+        } else {
+          toast.success('Signup successful! Please log in.');
+          setIsLogin(true); // Switch to login form after signup
+        }
       } else {
-        toast.success('Signup successful! Please log in.');
-        setIsLogin(true);
+        toast.error(response.data.message || 'Something went wrong');
       }
     } catch (error) {
-      console.error(error.response?.data || error.message);
-      toast.error(error.response?.data?.message || 'Something went wrong');
+      console.error("Error:", error?.response?.data?.message || error?.message || "Something went wrong");
+      toast.error(error?.response?.data?.message || "Something went wrong");
     }
   };
 
