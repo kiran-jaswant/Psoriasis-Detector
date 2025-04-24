@@ -15,7 +15,7 @@ const HeroWithImageBackground = () => {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-pink-900 px-4">
         <h3 className="text-lg tracking-widest text-pink-600 mb-4">KNOW YOUR SKIN</h3>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-          Early Detection of <br /> Skin Conditions Matters
+         Precise Detection of <br /> Skin Conditions Matters
         </h1>
         <p className="mt-4 text-lg max-w-xl text-pink-800">
           Learn more about symptoms, care, and expert advice for managing skin diseases like psoriasis.

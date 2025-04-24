@@ -9,6 +9,10 @@ import AboutImg1 from './../assets/AboutImg/aboutslide1.jpg'
 import AboutImg2 from './../assets/AboutImg/aboutslide2.jpg'
 import AboutImg3 from './../assets/AboutImg/aboutslide3.jpg'
 
+import Prachi from './../assets/AboutImg/Prachi.jpg'
+import Janvi from './../assets/AboutImg/Janvi.jpg'
+import Ritiksha from './../assets/AboutImg/Ritiksha.jpg'
+import Kiran from './../assets/AboutImg/Kiran.jpg'
 
 export default function About() {
   const sliderSettings = {
@@ -75,20 +79,20 @@ export default function About() {
   <h3 className="text-4xl font-semibold text-pink-600 mb-15">Meet Our Team</h3>
   <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-10">
     {[
-      "Ritiksha Ingle",
-      "Kiran Jaswant",
-      "Prachi Likhar",
-      "Arunima Lokhande",
-      "Janhvi Bhaise",
-      "Gaurav Tichkule"
-    ].map((name, i) => (
+      { name: "Ritiksha Ingle", image: Ritiksha },
+      { name: "Kiran Jaswant", image: Kiran },
+      { name: "Prachi Likhar", image: Prachi },
+      { name: "Arunima Lokhande", image: "https://path/to/arunima-image.jpg" },
+      { name: "Janvi Bhaise", image: Janvi },
+      { name: "Gaurav Tichkule", image: "https://path/to/gaurav-image.jpg" }
+    ].map((teamMember, i) => (
       <div key={i} className="flex flex-col items-center">
         <img
-          src="https://via.placeholder.com/150"
+          src={teamMember.image}
           className="rounded-full w-28 h-28 object-cover shadow-md mb-2"
-          alt={name}
+          alt={teamMember.name}
         />
-        <p className="text-pink-600 font-medium">{name}</p>
+        <p className="text-pink-600 font-medium">{teamMember.name}</p>
       </div>
     ))}
   </div>
