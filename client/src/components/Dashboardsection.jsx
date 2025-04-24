@@ -2,13 +2,14 @@ import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import reportImg from './../assets/DashboardImg/Report.png'; // Ensure this path is correct
 
-const Dashboardsection = ({ onGenerateReport }) => {
+const Dashboardsection = () => {
   const [uploadedFile, setUploadedFile] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isUploading, setIsUploading] = useState(false);
   const [isDraggingOver, setIsDraggingOver] = useState(false);
   const [prediction, setPrediction] = useState(null);  // Added state for prediction
 
+  // Handle dropzone file drop
   const onDrop = useCallback(
     acceptedFiles => {
       setIsDraggingOver(false);
