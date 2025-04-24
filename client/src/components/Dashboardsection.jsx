@@ -7,6 +7,7 @@ const Dashboardsection = () => {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isUploading, setIsUploading] = useState(false);
   const [isDraggingOver, setIsDraggingOver] = useState(false);
+  const [prediction, setPrediction] = useState(null);  // Added state for prediction
 
   // Handle dropzone file drop
   const onDrop = useCallback(
@@ -24,7 +25,6 @@ const Dashboardsection = () => {
           if (progress >= 100) {
             clearInterval(interval);
             setIsUploading(false);
-            // In a real scenario, you would upload the file here
             console.log('File uploaded:', file);
           }
         }, 300);
@@ -32,6 +32,41 @@ const Dashboardsection = () => {
     },
     [],
   );
+
+  const handleGenerateReport = async () => {
+    if (!uploadedFile) {
+      alert('Please upload an image first.');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', uploadedFile);
+
+    try {
+      setIsUploading(true);
+      const response = await fetch('http://localhost:5000/predict', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error("Backend returned an error:", errorData);
+        alert("Backend Error: " + (errorData.error || "Unknown error"));
+        return;
+      }
+
+      const result = await response.json();
+      console.log('Prediction result:', result);
+      setPrediction(result.prediction); // Update prediction state
+      alert(`Prediction: ${result.prediction}`);
+    } catch (error) {
+      console.error("Network or other error while making prediction:", error);
+      alert("Something went wrong while giving prediction.");
+    } finally {
+      setIsUploading(false);
+    }
+  };
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
@@ -41,19 +76,6 @@ const Dashboardsection = () => {
     onDragLeave: () => setIsDraggingOver(false),
   });
 
-  // Handle report generation
-  const handleGenerateReport = () => {
-    if (uploadedFile) {
-      // Logic to generate the report with the uploaded file
-      console.log('Generating report for file:', uploadedFile);
-      // Optionally reset the state
-      setUploadedFile(null);
-      setUploadProgress(0);
-    } else {
-      alert('Please upload an image first.');
-    }
-  };
-
   return (
     <div className="bg-white py-10 px-6 md:px-20">
       <h2 className="text-xl font-semibold text-gray-800 mb-6">Upload Image of affected part of skin:</h2>
@@ -62,69 +84,50 @@ const Dashboardsection = () => {
         {/* Left Side - Upload Area */}
         <div
           {...getRootProps()}
-          className={`border-2 border-dashed border-gray-300 rounded-md p-10 text-center cursor-pointer transition duration-300 ease-in-out ${
-            isDraggingOver ? 'bg-gray-50 border-green-500' : 'bg-white'
-          } md:w-1/2`}
+          className={`border-2 border-dashed border-gray-300 rounded-md p-10 text-center cursor-pointer transition duration-300 ease-in-out ${isDraggingOver ? 'bg-gray-50 border-green-500' : 'bg-white'}`}
         >
           <input {...getInputProps()} />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-12 w-12 text-green-500 mx-auto mb-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-green-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
           </svg>
-          <p className="text-gray-700">
-            {isDragActive ? 'Drop it here...' : 'Drag and Drop Files or Browse'}
-          </p>
+          <p className="text-gray-700">{isDragActive ? 'Drop it here...' : 'Drag and Drop Files or Browse'}</p>
           <p className="text-gray-500 text-sm">(Only jpg, jpeg, png supported)</p>
         </div>
 
         {/* Right Side - Report Image */}
         <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center items-center">
           <div className="relative w-100 h-100 rounded-md overflow-hidden shadow-md">
-            <img
-              src={reportImg}
-              alt="Report Illustration"
-              className="absolute inset-0 w-full h-full object-contain"
-            />
+            <img src={reportImg} alt="Report Illustration" className="absolute inset-0 w-full h-full object-contain" />
           </div>
         </div>
       </div>
 
-      {/* Generate Report Button - Moved below upload section */}
+      {/* Generate Report Button */}
       <div className="mt-4">
-        <button
-          onClick={handleGenerateReport}
-          className={`bg-green-500 text-white py-3 px-6 mt:[-30px] rounded-lg transition-all duration-300 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed`}
-          disabled={!uploadedFile || isUploading}
-        >
+        <button onClick={handleGenerateReport} className={`bg-green-500 text-white py-3 px-6 mt-[-30px] rounded-lg transition-all duration-300 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed`} disabled={!uploadedFile || isUploading}>
           GENERATE REPORT
         </button>
       </div>
 
-      {/* Uploading Progress (moved below the button) */}
+      {/* Display Prediction */}
+      {prediction && (
+        <div className="mt-8">
+          <p className="text-gray-700">Prediction: {prediction}</p>
+        </div>
+      )}
+
+      {/* Uploading Progress */}
       {isUploading && (
         <div className="mt-8">
           <p className="text-gray-700 mb-2">Uploading...</p>
           <div className="bg-gray-200 rounded-full h-2 overflow-hidden">
-            <div
-              className="bg-green-500 h-full rounded-full transition-all duration-500 ease-out"
-              style={{ width: `${uploadProgress}%` }}
-            ></div>
+            <div className="bg-green-500 h-full rounded-full transition-all duration-500 ease-out" style={{ width: `${uploadProgress}%` }}></div>
           </div>
           <p className="text-gray-500 text-sm mt-1">{uploadProgress}%</p>
         </div>
       )}
 
-      {/* Uploaded File Info (moved below the button) */}
+      {/* Uploaded File Info */}
       {uploadedFile && !isUploading && (
         <div className="mt-8">
           <p className="text-gray-700">Uploaded File: {uploadedFile.name}</p>
