@@ -2,12 +2,13 @@ import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import reportImg from './../assets/DashboardImg/Report.png'; // Ensure this path is correct
 
-const Dashboardsection = ({ onGenerateReport }) => {
+const Dashboardsection = () => {
   const [uploadedFile, setUploadedFile] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isUploading, setIsUploading] = useState(false);
   const [isDraggingOver, setIsDraggingOver] = useState(false);
 
+  // Handle dropzone file drop
   const onDrop = useCallback(
     acceptedFiles => {
       setIsDraggingOver(false);
@@ -40,9 +41,11 @@ const Dashboardsection = ({ onGenerateReport }) => {
     onDragLeave: () => setIsDraggingOver(false),
   });
 
+  // Handle report generation
   const handleGenerateReport = () => {
     if (uploadedFile) {
-      onGenerateReport(uploadedFile);
+      // Logic to generate the report with the uploaded file
+      console.log('Generating report for file:', uploadedFile);
       // Optionally reset the state
       setUploadedFile(null);
       setUploadProgress(0);
