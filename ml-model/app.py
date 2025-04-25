@@ -29,9 +29,17 @@ def predict():
         prediction = model.predict(img_array)
         predicted_class = int(np.argmax(prediction, axis=1)[0])
         labels = ['Mild', 'Moderate', 'Severe']
-        predicted_label = labels[predicted_class]
+        advice = {
+            'Mild': 'Maintain good skincare and monitor symptoms regularly.',
+            'Moderate': 'Consider visiting a dermatologist for a personalized treatment plan.',
+            'Severe': 'Immediate consultation with a dermatologist is highly recommended.'
+        }
+        severity = labels[predicted_class]
 
-        return jsonify({'prediction': predicted_label})
+        return jsonify({
+            'severity': severity,
+            'advice': advice[severity]
+        })
 
     except Exception as e:
         print(f"Prediction error: {e}")
