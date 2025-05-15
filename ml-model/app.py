@@ -6,8 +6,8 @@ from PIL import Image
 import numpy as np
 
 # Load both models
-skin_detector_model = load_model('skin_detector_model.h5')  #  new model
-severity_model = load_model('psoriasis_severity_model.h5')  #  old model
+skin_model = load_model('skin_detector_model.h5')
+severity_model = load_model('psoriasis_severity_model.h5')
 
 app = Flask(__name__)
 CORS(app)
@@ -21,40 +21,44 @@ def predict():
     print(f"Received file: {file.filename}")
 
     try:
-        # Step 1: Preprocess image
         image = Image.open(file.stream).convert('RGB')
         image = image.resize((128, 128))
         img_array = img_to_array(image) / 255.0
-        img_array = np.expand_dims(img_array, axis=0)  # (1, 128, 128, 3)
+        img_array = np.expand_dims(img_array, axis=0)
 
-        # Step 2: Run skin detector model
-        skin_pred = skin_detector_model.predict(img_array)
-        skin_label_index = int(np.argmax(skin_pred))
+        # Step 1: Use skin detector model
+        skin_pred = skin_model.predict(img_array)
+        skin_class = np.argmax(skin_pred, axis=1)[0]
         skin_labels = ['invalid', 'normal skin', 'psoriasis']
-        skin_result = skin_labels[skin_label_index]
+        skin_result = skin_labels[skin_class]
 
-        # Step 3: Handle based on result
         if skin_result == 'invalid':
-            return jsonify({'severity': 'Invalid Image', 'advice': 'Please upload a clear image of skin area.'})
+            return jsonify({
+                'severity': 'Invalid image',
+                'advice': 'Please upload a proper skin image for analysis.'
+            })
 
         elif skin_result == 'normal skin':
-            return jsonify({'severity': 'Normal Skin', 'advice': 'No signs of psoriasis detected. Maintain healthy skincare.'})
+            return jsonify({
+                'severity': 'Normal skin',
+                'advice': 'No signs of psoriasis detected. Maintain healthy skincare.'
+            })
 
         elif skin_result == 'psoriasis':
-            # Step 4: Run severity model
+            # Step 2: Use severity model
             severity_pred = severity_model.predict(img_array)
-            severity_index = int(np.argmax(severity_pred))
+            severity_class = np.argmax(severity_pred, axis=1)[0]
             severity_labels = ['Mild', 'Moderate', 'Severe']
             advice = {
                 'Mild': 'Maintain good skincare and monitor symptoms regularly.',
                 'Moderate': 'Consider visiting a dermatologist for a personalized treatment plan.',
                 'Severe': 'Immediate consultation with a dermatologist is highly recommended.'
             }
-            severity_result = severity_labels[severity_index]
+            severity = severity_labels[severity_class]
 
             return jsonify({
-                'severity': severity_result,
-                'advice': advice[severity_result]
+                'severity': severity,
+                'advice': advice[severity]
             })
 
         else:

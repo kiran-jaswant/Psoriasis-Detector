@@ -8,12 +8,15 @@ const Dashboardsection = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [isDraggingOver, setIsDraggingOver] = useState(false);
   const [prediction, setPrediction] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null);
+
 
   const onDrop = useCallback(acceptedFiles => {
     setIsDraggingOver(false);
     if (acceptedFiles.length > 0) {
       const file = acceptedFiles[0];
       setUploadedFile(file);
+      setImagePreview(URL.createObjectURL(file)); // 👈 create preview
       setIsUploading(true);
       let progress = 0;
       const interval = setInterval(() => {
@@ -60,16 +63,16 @@ const Dashboardsection = () => {
     }
   };
 
- const getSeverityColor = (severity) => {
-  switch (severity) {
-    case 'Mild': return 'text-green-600';
-    case 'Moderate': return 'text-yellow-600';
-    case 'Severe': return 'text-red-600';
-    case 'Normal Skin': return 'text-blue-600';
-    case 'Invalid Image': return 'text-gray-500';
-    default: return 'text-gray-800';
-  }
-};
+  const getSeverityColor = (severity) => {
+    switch (severity) {
+      case 'Mild': return 'text-green-600';
+      case 'Moderate': return 'text-yellow-600';
+      case 'Severe': return 'text-red-600';
+      case 'Normal Skin': return 'text-blue-600';
+      case 'Invalid Image': return 'text-gray-500';
+      default: return 'text-gray-800';
+    }
+  };
 
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -102,14 +105,31 @@ const Dashboardsection = () => {
             <p className="text-gray-500 text-sm">(Only jpg, jpeg, png supported)</p>
           </div>
 
+          {/* Uploaded Image Preview */}
+          {imagePreview && (
+            <div className="mt-4 flex justify-center pr-4">
+              <div>
+                <h3 className="text-gray-700 font-semibold mb-2 text-left">Preview:</h3>
+                <img
+                  src={imagePreview}
+                  alt="Uploaded Preview"
+                  className="w-72 h-96 rounded-lg border border-gray-300 shadow-md"
+                />
+              </div>
+            </div>
+          )}
+
+
           {/* Generate Button */}
-          <button
-            onClick={handleGenerateReport}
-            className="bg-green-500 text-white py-3 px-6 rounded-lg transition-all duration-300 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
-            disabled={!uploadedFile || isUploading}
-          >
-            GENERATE REPORT
-          </button>
+          <div className="flex justify-end pr-80">
+            <button
+              onClick={handleGenerateReport}
+              className="mt-4 bg-green-500 text-white py-3 px-6 rounded-lg transition-all duration-300 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={!uploadedFile || isUploading}
+            >
+              GENERATE REPORT
+            </button>
+          </div>
 
           {/* Prediction Card */}
           {prediction && (
