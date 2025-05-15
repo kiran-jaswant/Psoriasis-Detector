@@ -60,14 +60,17 @@ const Dashboardsection = () => {
     }
   };
 
-  const getSeverityColor = (severity) => {
-    switch (severity) {
-      case 'Mild': return 'text-green-600';
-      case 'Moderate': return 'text-yellow-600';
-      case 'Severe': return 'text-red-600';
-      default: return 'text-gray-800';
-    }
-  };
+ const getSeverityColor = (severity) => {
+  switch (severity) {
+    case 'Mild': return 'text-green-600';
+    case 'Moderate': return 'text-yellow-600';
+    case 'Severe': return 'text-red-600';
+    case 'Normal Skin': return 'text-blue-600';
+    case 'Invalid Image': return 'text-gray-500';
+    default: return 'text-gray-800';
+  }
+};
+
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
