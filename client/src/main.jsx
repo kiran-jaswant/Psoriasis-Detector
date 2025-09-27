@@ -7,6 +7,8 @@ import Dashboard from "./views/Dashboard.jsx";
 import Contact from "./views/Contact.jsx";
 import About from "./views/About.jsx";
 import Home from "./views/Homepage.jsx";
+import Consultation from "./views/Consultation.jsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 
 const root = document.getElementById("root");
@@ -17,9 +19,10 @@ ReactDOM.createRoot(root).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/dashboard" element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/consult" element={<ProtectedRoute><Consultation /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

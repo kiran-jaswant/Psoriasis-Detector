@@ -1,8 +1,13 @@
+// controllers/user.js
 import User from './../models/User.js';
+import bcrypt from 'bcrypt';       // 🔑 for hashing passwords
+import jwt from 'jsonwebtoken';    // 🔑 for JWT
 
+// ------------------ SIGNUP ------------------
 const postSignup = async (req, res) => {
   const { name, email, password, city } = req.body;
 
+  // ✅ Validate all fields
   if (!name || !email || !password || !city) {
     return res.status(400).json({
       message: "All fields are required",
@@ -12,6 +17,7 @@ const postSignup = async (req, res) => {
   }
 
   try {
+    // ✅ Check if email already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({
@@ -21,7 +27,11 @@ const postSignup = async (req, res) => {
       });
     }
 
-    const newUser = new User({ name, email, password, city });
+    // 🔑 Hash password before saving
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // ✅ Create new user with hashed password
+    const newUser = new User({ name, email, password: hashedPassword, city });
     const savedUser = await newUser.save();
 
     return res.status(201).json({
@@ -38,9 +48,11 @@ const postSignup = async (req, res) => {
   }
 };
 
+// ------------------ LOGIN ------------------
 const postLogin = async (req, res) => {
   const { email, password } = req.body;
 
+  // ✅ Validate email & password
   if (!email || !password) {
     return res.status(400).json({
       message: "Email and password are required",
@@ -52,7 +64,8 @@ const postLogin = async (req, res) => {
   try {
     const user = await User.findOne({ email });
 
-    if (!user || user.password !== password) {
+    // ✅ If user not found
+    if (!user) {
       return res.status(400).json({
         message: "Invalid email or password",
         data: null,
@@ -60,8 +73,25 @@ const postLogin = async (req, res) => {
       });
     }
 
+    // 🔑 Compare hashed password
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(400).json({
+        message: "Invalid email or password",
+        success: false,
+      });
+    }
+
+    // 🔑 Generate JWT token (1h expiry)
+    const token = jwt.sign(
+      { id: user._id, email: user.email },
+      process.env.JWT_SECRET,
+      { expiresIn: "1h" }
+    );
+
     return res.status(200).json({
       message: "Login Successful",
+      token, // send token to frontend
       data: user,
       success: true,
     });

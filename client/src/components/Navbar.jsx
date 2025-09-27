@@ -1,10 +1,20 @@
 import React from 'react';
 import { User } from 'lucide-react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
-import Login from './Login';
-import Logo from './../assets/logo.png'
+import { Link, useNavigate } from 'react-router-dom';
+import Logo from './../assets/logo.png';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  // Check if user is logged in
+  const isLoggedIn = !!localStorage.getItem('token');
+
+  // Logout handler
+  const handleLogout = () => {
+    localStorage.removeItem('token'); // remove JWT
+    navigate('/login'); // redirect to login page
+  };
+
   return (
     <nav className="bg-pink-50 shadow-sm border-b border-pink-200">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -18,7 +28,6 @@ const Navbar = () => {
           {[ 
             { href: '/', label: 'Home', className: 'text-pink-500' },
             { href: '/about', label: 'About' },
-            { href: '/consult', label: 'Consultation Plans' },
             { href: '/contact', label: 'Contact' }
           ].map(({ href, label, className = '' }) => (
             <li key={href} className="group relative pb-1">
@@ -31,15 +40,34 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+
+          {/* Show Consultation Plans only if logged in */}
+          {isLoggedIn && (
+            <li className="group relative pb-1">
+              <a href="/consult" className="hover:text-pink-700 transition-colors duration-200">
+                Consultation Plans
+              </a>
+            </li>
+          )}
         </ul>
 
-        {/* Login Button */}
-        <Link to="/login"> {/* Link to Login page */}
-          <button className="flex items-center text-pink-500 cursor-pointer hover:text-pink-700 transition-colors duration-200">
+        {/* Login / Logout Button */}
+        {isLoggedIn ? (
+          <button
+            onClick={handleLogout}
+            className="flex items-center text-pink-500 cursor-pointer hover:text-pink-700 transition-colors duration-200"
+          >
             <User className="mr-2 h-5 w-5" />
-            Log In
+            Logout
           </button>
-        </Link>
+        ) : (
+          <Link to="/login">
+            <button className="flex items-center text-pink-500 cursor-pointer hover:text-pink-700 transition-colors duration-200">
+              <User className="mr-2 h-5 w-5" />
+              Log In
+            </button>
+          </Link>
+        )}
       </div>
     </nav>
   );
