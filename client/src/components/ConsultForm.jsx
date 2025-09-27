@@ -4,27 +4,23 @@ function ConsultForm() {
     const [formData, setFormData] = useState({
         age: "",
         gender: "",
-        symptoms: "",
-        duration: "",
-        severity: "",
-        familyHistory: "",
-        medications: "",
-        triggers: "",
-        lifestyle: "",
-        diet: "",
+        bmi: "",
+        smoking: "",
+        alcohol: "",
         stressLevel: "",
-        otherConditions: "",
+        dietType: "",
+        exerciseFrequency: "",
+        comorbidities: "",
+        reportedSymptoms: "",
     });
 
     const [chatHistory, setChatHistory] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    // Handle input change
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    // Simulated chatbot API call
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
@@ -41,7 +37,7 @@ function ConsultForm() {
                 ...prev,
                 {
                     sender: "bot",
-                    text: "Based on your answers, I suggest avoiding known triggers, managing stress, following a balanced diet, and consulting a dermatologist for treatment options.",
+                    text: "Based on your answers, I suggest maintaining a balanced diet, regular exercise, managing stress, avoiding smoking and alcohol, and consulting a healthcare professional for further guidance.",
                 },
             ]);
             setLoading(false);
@@ -49,13 +45,12 @@ function ConsultForm() {
     };
 
     return (
-        <div className="min-h-screen bg-pink-100 mt-100px flex items-center justify-center p-6 ">
+        <div className="min-h-screen bg-pink-100 mt-100px flex items-center justify-center p-6">
             <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-lg border border-pink-200">
                 <h1 className="text-2xl font-bold text-pink-600 mb-6 text-center">
                     Psoriasis Consultation
                 </h1>
 
-                {/* Form */}
                 <form onSubmit={handleSubmit} className="space-y-4">
                     {/* Age */}
                     <div>
@@ -87,63 +82,26 @@ function ConsultForm() {
                         </select>
                     </div>
 
-                    {/* Symptoms */}
+                    {/* BMI */}
                     <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Symptoms
-                        </label>
-                        <textarea
-                            name="symptoms"
-                            value={formData.symptoms}
-                            onChange={handleChange}
-                            required
-                            className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
-                        />
-                    </div>
-
-                    {/* Duration */}
-                    <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Duration of Condition
-                        </label>
+                        <label className="block text-pink-700 font-medium mb-1">BMI</label>
                         <input
-                            type="text"
-                            name="duration"
-                            value={formData.duration}
+                            type="number"
+                            name="bmi"
+                            value={formData.bmi}
                             onChange={handleChange}
+                            placeholder="e.g., 24.5"
                             required
-                            placeholder="e.g., 6 months"
                             className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
                         />
                     </div>
 
-                    {/* Severity */}
+                    {/* Smoking */}
                     <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Severity
-                        </label>
+                        <label className="block text-pink-700 font-medium mb-1">Smoking</label>
                         <select
-                            name="severity"
-                            value={formData.severity}
-                            onChange={handleChange}
-                            required
-                            className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
-                        >
-                            <option value="">Select</option>
-                            <option value="mild">Mild</option>
-                            <option value="moderate">Moderate</option>
-                            <option value="severe">Severe</option>
-                        </select>
-                    </div>
-
-                    {/* Family History */}
-                    <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Family History of Psoriasis
-                        </label>
-                        <select
-                            name="familyHistory"
-                            value={formData.familyHistory}
+                            name="smoking"
+                            value={formData.smoking}
                             onChange={handleChange}
                             required
                             className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
@@ -154,95 +112,97 @@ function ConsultForm() {
                         </select>
                     </div>
 
-                    {/* Current Medications */}
+                    {/* Alcohol */}
                     <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Current Medications
-                        </label>
-                        <textarea
-                            name="medications"
-                            value={formData.medications}
+                        <label className="block text-pink-700 font-medium mb-1">Alcohol</label>
+                        <select
+                            name="alcohol"
+                            value={formData.alcohol}
                             onChange={handleChange}
-                            placeholder="List any medications you are taking"
+                            required
                             className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
-                        />
+                        >
+                            <option value="">Select</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
                     </div>
 
-                    {/* Triggers */}
+                    {/* Stress Level */}
                     <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Known Triggers (stress, food, weather, etc.)
-                        </label>
-                        <textarea
-                            name="triggers"
-                            value={formData.triggers}
-                            onChange={handleChange}
-                            placeholder="e.g., stress, cold weather, spicy food"
-                            className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
-                        />
-                    </div>
-
-                    {/* Lifestyle */}
-                    <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Lifestyle Habits
-                        </label>
-                        <textarea
-                            name="lifestyle"
-                            value={formData.lifestyle}
-                            onChange={handleChange}
-                            placeholder="e.g., smoking, alcohol, sleep patterns"
-                            className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
-                        />
-                    </div>
-
-                    {/* Diet */}
-                    <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Diet Preferences
-                        </label>
-                        <textarea
-                            name="diet"
-                            value={formData.diet}
-                            onChange={handleChange}
-                            placeholder="e.g., vegetarian, non-vegetarian, high sugar intake"
-                            className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
-                        />
-                    </div>
-
-                    {/* Stress */}
-                    <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Stress Level
-                        </label>
+                        <label className="block text-pink-700 font-medium mb-1">Stress Level</label>
                         <select
                             name="stressLevel"
                             value={formData.stressLevel}
                             onChange={handleChange}
+                            required
                             className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
                         >
                             <option value="">Select</option>
                             <option value="low">Low</option>
-                            <option value="moderate">Moderate</option>
+                            <option value="medium">Medium</option>
                             <option value="high">High</option>
                         </select>
                     </div>
 
-                    {/* Other Conditions */}
+                    {/* Diet Type */}
                     <div>
-                        <label className="block text-pink-700 font-medium mb-1">
-                            Other Health Conditions
-                        </label>
-                        <textarea
-                            name="otherConditions"
-                            value={formData.otherConditions}
+                        <label className="block text-pink-700 font-medium mb-1">Diet Type</label>
+                        <select
+                            name="dietType"
+                            value={formData.dietType}
                             onChange={handleChange}
-                            placeholder="e.g., diabetes, arthritis"
+                            required
+                            className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
+                        >
+                            <option value="">Select</option>
+                            <option value="balanced">Balanced</option>
+                            <option value="junk-heavy">Junk-heavy</option>
+                            <option value="vegetarian">Vegetarian</option>
+                        </select>
+                    </div>
+
+                    {/* Exercise Frequency */}
+                    <div>
+                        <label className="block text-pink-700 font-medium mb-1">Exercise Frequency</label>
+                        <select
+                            name="exerciseFrequency"
+                            value={formData.exerciseFrequency}
+                            onChange={handleChange}
+                            required
+                            className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
+                        >
+                            <option value="">Select</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+
+                    {/* Comorbidities */}
+                    <div>
+                        <label className="block text-pink-700 font-medium mb-1">Comorbidities</label>
+                        <textarea
+                            name="comorbidities"
+                            value={formData.comorbidities}
+                            onChange={handleChange}
+                            placeholder="e.g., diabetes, hypertension, arthritis"
                             className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
                         />
                     </div>
 
-                    {/* Submit */}
+                    {/* Reported Symptoms */}
+                    <div>
+                        <label className="block text-pink-700 font-medium mb-1">Reported Symptoms</label>
+                        <textarea
+                            name="reportedSymptoms"
+                            value={formData.reportedSymptoms}
+                            onChange={handleChange}
+                            placeholder="e.g., itching, redness, scaling, pain"
+                            className="w-full p-2 border border-pink-300 rounded-lg focus:ring-2 focus:ring-pink-400"
+                        />
+                    </div>
+
                     <button
                         type="submit"
                         className="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition disabled:bg-pink-300"
