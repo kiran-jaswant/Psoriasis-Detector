@@ -18,14 +18,14 @@ const Navbar = () => {
   return (
     <nav className="bg-pink-50 shadow-sm border-b border-pink-200">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-       
+
         <div className="flex items-center h-10 w-10">
           <img src={Logo} alt="Logo" className="" />
         </div>
 
         {/* Navigation Links */}
         <ul className="flex space-x-8 font-semibold text-pink-900">
-          {[ 
+          {[
             { href: '/', label: 'Home', className: 'text-pink-500' },
             { href: '/about', label: 'About' },
             { href: '/contact', label: 'Contact' }
@@ -41,14 +41,22 @@ const Navbar = () => {
             </li>
           ))}
 
-          {/* Show Consultation Plans only if logged in */}
+          {/* Show Dashboard and Consultation only if logged in */}
           {isLoggedIn && (
-            <li className="group relative pb-1">
-              <a href="/consult" className="hover:text-pink-700 transition-colors duration-200">
-                Consultation Plans
-              </a>
-            </li>
+            <>
+              <li className="group relative pb-1">
+                <a href="/dashboard" className="hover:text-pink-700 transition-colors duration-200">
+                  Dashboard
+                </a>
+              </li>
+              <li className="group relative pb-1">
+                <a href="/consult" className="hover:text-pink-700 transition-colors duration-200">
+                  Consultation Plans
+                </a>
+              </li>
+            </>
           )}
+
         </ul>
 
         {/* Login / Logout Button */}
