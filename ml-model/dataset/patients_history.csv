@@ -1,0 +1,4 @@
+age,sex,bmi,smoking,alcohol,stress_level,sleep_hours,climate,occupation,scalp_involved,inverse_involved,nail_changes,moisturiser_use,harsh_soap_use,diet_profile,itch_severity,flare_frequency,severity,diet:anti_inflammatory_plate,diet:limit_trigger_foods,diet:hydration,diet:alcohol_reduce,diet:weight_management,skin:lukewarm_showers,skin:bland_moisturizer,skin:gentle_cleanser,skin:sunscreen,cloth:soft_cotton,cloth:loose_layers,scalp:gentle_shampoo,trig:fragrance_free,trig:humidifier,trig:stress_mgmt,trig:smoking_cessation,habit:sleep,habit:regular_exercise,follow:mild,follow:moderate,follow:severe
+28,f,29.1,no,yes,7,6,dry,indoor,yes,no,no,no,yes,mixed,6,3,moderate,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0
+42,m,31.5,yes,yes,5,7,temperate,outdoor,no,no,yes,yes,no,nonveg,4,2,mild,1,1,1,1,1,1,1,1,0,1,1,0,1,0,0,1,1,1,0,0
+35,f,22.0,no,no,3,8,cold,indoor,no,no,no,yes,no,veg,3,1,mild,1,0,1,0,0,1,1,1,0,1,1,0,1,1,0,0,1,1,1,0

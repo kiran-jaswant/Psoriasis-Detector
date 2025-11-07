@@ -5,6 +5,7 @@ import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import authMiddleware from './middleware/auth.js';
 import consultRoutes from "./routes/consultRoutes.js";
+import recommendRoutes from "./routes/recommendationRoutes.js";  
 dotenv.config();
 
 import { postSignup, postLogin } from "./controllers/user.js";
@@ -37,6 +38,12 @@ app.get("/dashboard", authMiddleware, (req, res) => {
     });
 });
 
+app.use((req, _res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
+
+
 app.get("/", (req, res) => {
     res.json({ message: "hello from server" });
 });
@@ -49,6 +56,9 @@ app.post("/login", postLogin);
 
 // ------- Consultation APIs -------- //
 app.use("/api/consult", consultRoutes);
+
+// ------- reccommendation ----------//
+app.use("/api", recommendRoutes);
 
 
 const PORT = process.env.PORT || 5002;
