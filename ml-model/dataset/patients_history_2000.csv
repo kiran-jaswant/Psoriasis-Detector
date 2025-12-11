@@ -1,0 +1,501 @@
+age,sex,bmi,smoking,alcohol,stress_level,sleep_hours,climate,occupation,scalp_involved,inverse_involved,nail_changes,harsh_soap_use,moisturiser_use,diet_profile,itch_severity,flare_frequency,severity,lifestyle_advice
+32,m,34.6,no,no,3,9,humid,indoor,yes,yes,no,no,no,mixed,2,3,mild,use emollients twice daily; weight management
+50,f,30.1,no,yes,2,8,dry,indoor,yes,no,no,yes,yes,mixed,3,4,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management
+57,m,30.9,no,no,2,7,temperate,indoor,no,no,yes,no,yes,mixed,4,1,mild,weight management
+50,f,31.2,no,no,4,6,dry,indoor,no,no,yes,no,yes,veg,0,5,mild,humidifier & lukewarm showers; weight management
+28,m,22.1,no,yes,6,6,humid,indoor,yes,no,no,no,no,balanced,7,1,mild,limit alcohol; use emollients twice daily; stress reduction daily
+50,f,32.1,yes,yes,8,8,dry,indoor,yes,no,no,no,yes,balanced,7,2,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management; stress reduction daily
+23,m,34.7,no,yes,6,8,cold,outdoor,yes,yes,no,no,no,balanced,8,1,moderate,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+26,m,37.9,no,yes,9,9,temperate,indoor,yes,yes,no,no,no,balanced,3,4,moderate,limit alcohol; use emollients twice daily; weight management; stress reduction daily
+61,f,33.4,no,yes,8,7,temperate,outdoor,no,no,no,no,yes,mixed,5,3,moderate,limit alcohol; weight management; stress reduction daily
+60,m,23.2,yes,no,9,8,dry,indoor,no,yes,no,no,yes,mixed,0,1,mild,stop smoking; humidifier & lukewarm showers; stress reduction daily
+28,m,34.5,yes,no,7,6,temperate,indoor,no,no,yes,no,yes,veg,0,2,moderate,stop smoking; weight management; stress reduction daily
+28,f,26.5,no,yes,3,9,dry,indoor,no,no,yes,no,yes,mixed,0,1,mild,limit alcohol; humidifier & lukewarm showers
+40,m,24.8,no,no,3,5,dry,indoor,no,no,no,no,yes,balanced,1,0,mild,humidifier & lukewarm showers
+69,m,35.1,no,yes,6,5,humid,indoor,yes,no,no,yes,yes,balanced,1,5,moderate,limit alcohol; avoid harsh soaps; weight management; stress reduction daily
+55,f,34.9,yes,no,9,7,temperate,indoor,no,no,no,no,yes,mixed,4,5,moderate,stop smoking; weight management; stress reduction daily
+60,f,19.5,no,yes,8,7,dry,indoor,no,yes,no,yes,yes,mixed,2,2,mild,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+49,f,28.3,no,no,9,6,dry,indoor,yes,no,no,yes,no,veg,5,4,moderate,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+35,f,28.5,no,yes,6,9,dry,outdoor,no,no,no,no,no,veg,9,5,moderate,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+57,f,29.0,no,no,9,7,dry,indoor,no,no,yes,yes,no,mixed,4,0,mild,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+24,m,27.0,no,no,8,5,temperate,indoor,no,yes,no,no,yes,veg,6,0,mild,weight management; stress reduction daily
+55,f,35.0,no,yes,6,6,humid,indoor,yes,no,no,no,yes,balanced,5,0,moderate,limit alcohol; weight management; stress reduction daily
+65,m,36.5,no,no,8,7,dry,outdoor,yes,yes,no,yes,no,nonveg,6,3,moderate,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+55,f,34.4,no,yes,2,6,cold,indoor,no,no,no,yes,yes,veg,9,2,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management
+18,m,25.7,yes,no,2,6,cold,indoor,no,yes,no,no,yes,balanced,3,3,mild,stop smoking; humidifier & lukewarm showers
+41,f,20.0,no,no,5,9,temperate,indoor,yes,no,no,no,no,balanced,2,4,mild,use emollients twice daily
+36,m,19.5,no,no,3,7,temperate,outdoor,no,no,no,yes,yes,mixed,7,4,mild,avoid harsh soaps
+47,m,31.8,no,yes,3,8,humid,indoor,yes,no,no,yes,yes,balanced,7,4,moderate,limit alcohol; avoid harsh soaps; weight management
+26,m,35.5,no,yes,2,6,dry,indoor,no,no,no,no,yes,mixed,9,5,moderate,limit alcohol; humidifier & lukewarm showers; weight management
+55,f,21.4,yes,no,5,7,dry,indoor,no,no,no,no,yes,mixed,8,5,moderate,stop smoking; humidifier & lukewarm showers
+20,m,21.4,no,no,9,6,temperate,indoor,no,no,no,no,yes,mixed,4,5,mild,stress reduction daily
+59,m,22.6,no,yes,5,5,dry,indoor,yes,no,no,no,yes,balanced,6,2,moderate,limit alcohol; humidifier & lukewarm showers
+19,m,37.4,yes,no,7,7,humid,indoor,no,yes,no,no,yes,veg,1,3,moderate,stop smoking; weight management; stress reduction daily
+55,f,25.9,yes,yes,7,5,humid,indoor,no,no,no,no,yes,balanced,7,0,moderate,limit alcohol; stop smoking; stress reduction daily
+31,f,31.4,no,no,7,9,cold,outdoor,yes,yes,yes,yes,yes,balanced,2,4,moderate,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+60,m,22.3,no,no,5,5,dry,outdoor,yes,yes,no,no,no,balanced,4,0,mild,use emollients twice daily; humidifier & lukewarm showers
+44,f,31.8,no,yes,8,9,temperate,outdoor,no,no,no,no,yes,nonveg,0,3,mild,limit alcohol; weight management; stress reduction daily
+49,f,21.9,no,no,5,9,temperate,indoor,no,no,no,no,no,mixed,5,4,mild,use emollients twice daily
+67,m,21.6,no,yes,8,8,dry,outdoor,no,no,no,no,yes,mixed,8,2,mild,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+51,f,37.9,no,no,6,9,temperate,indoor,no,yes,no,no,no,mixed,0,4,mild,use emollients twice daily; weight management; stress reduction daily
+26,m,27.3,yes,no,3,5,humid,indoor,yes,no,yes,no,no,mixed,3,1,mild,stop smoking; use emollients twice daily; weight management
+34,m,29.0,no,no,6,5,humid,outdoor,no,no,no,no,yes,balanced,7,3,mild,weight management; stress reduction daily
+52,f,30.2,no,no,3,6,dry,indoor,yes,no,yes,yes,yes,balanced,4,3,moderate,avoid harsh soaps; humidifier & lukewarm showers; weight management
+63,f,21.1,no,no,5,7,humid,indoor,no,yes,no,yes,no,mixed,3,3,mild,avoid harsh soaps; use emollients twice daily
+63,f,35.9,no,no,9,8,dry,indoor,no,no,no,no,yes,balanced,8,1,moderate,humidifier & lukewarm showers; weight management; stress reduction daily
+47,f,25.6,no,yes,8,5,dry,outdoor,no,no,no,yes,yes,balanced,8,3,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+26,m,22.9,no,yes,8,8,cold,outdoor,no,no,no,no,no,mixed,6,0,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+44,f,29.8,no,no,6,6,temperate,indoor,yes,no,no,yes,yes,mixed,3,2,mild,avoid harsh soaps; weight management; stress reduction daily
+44,f,37.1,no,yes,8,5,humid,indoor,no,no,no,no,yes,mixed,8,1,moderate,limit alcohol; weight management; stress reduction daily
+20,m,21.6,no,no,5,5,cold,outdoor,no,no,no,no,yes,balanced,0,2,mild,humidifier & lukewarm showers
+19,m,34.8,no,no,8,9,dry,indoor,no,no,yes,no,yes,balanced,2,4,mild,humidifier & lukewarm showers; weight management; stress reduction daily
+24,f,18.7,no,no,8,8,humid,outdoor,yes,yes,yes,no,yes,balanced,4,5,mild,stress reduction daily
+62,m,21.9,yes,yes,8,9,humid,indoor,yes,no,no,no,yes,balanced,7,4,moderate,limit alcohol; stop smoking; stress reduction daily
+67,m,33.1,no,no,3,8,cold,indoor,no,no,no,no,no,balanced,5,1,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+19,m,20.7,no,yes,6,9,dry,indoor,yes,yes,yes,no,yes,mixed,5,0,mild,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+49,f,25.3,no,no,9,6,dry,indoor,yes,yes,no,yes,yes,mixed,4,4,moderate,avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+40,m,29.0,yes,no,5,9,humid,indoor,yes,no,no,yes,no,nonveg,7,5,moderate,stop smoking; avoid harsh soaps; use emollients twice daily; weight management
+26,m,35.7,yes,no,5,8,temperate,indoor,yes,no,no,no,yes,balanced,3,0,moderate,stop smoking; weight management
+23,f,20.7,yes,yes,8,7,temperate,outdoor,no,no,yes,no,yes,mixed,1,1,mild,limit alcohol; stop smoking; stress reduction daily
+33,m,22.9,no,yes,2,8,dry,indoor,yes,yes,no,no,no,balanced,9,4,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers
+44,m,20.5,yes,no,2,7,humid,outdoor,yes,yes,no,no,yes,balanced,6,1,mild,stop smoking
+22,m,28.8,no,no,7,6,dry,indoor,yes,yes,yes,yes,yes,mixed,1,0,mild,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+40,f,28.4,yes,no,5,7,humid,outdoor,yes,no,no,no,no,mixed,0,1,mild,stop smoking; use emollients twice daily; weight management
+48,m,29.1,no,no,7,7,humid,indoor,yes,no,yes,no,yes,balanced,4,0,mild,weight management; stress reduction daily
+32,m,23.0,yes,no,7,8,dry,indoor,yes,no,no,yes,yes,mixed,3,2,moderate,stop smoking; avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+29,m,36.9,no,yes,5,8,temperate,indoor,no,no,no,no,yes,mixed,1,5,moderate,limit alcohol; weight management
+25,f,29.2,no,no,9,7,dry,outdoor,no,yes,yes,no,yes,veg,6,3,mild,humidifier & lukewarm showers; weight management; stress reduction daily
+50,m,25.6,no,yes,9,5,dry,indoor,no,no,no,no,no,mixed,7,5,moderate,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+64,f,24.3,no,no,3,6,humid,indoor,no,no,no,no,yes,balanced,4,0,mild,maintain routine & hydration
+41,f,25.3,no,yes,4,5,cold,indoor,yes,yes,no,no,yes,veg,5,0,mild,limit alcohol; humidifier & lukewarm showers
+32,f,27.3,yes,yes,6,6,dry,outdoor,yes,no,no,no,yes,veg,2,5,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management; stress reduction daily
+26,m,19.7,no,yes,6,8,humid,outdoor,yes,yes,no,no,yes,balanced,4,0,mild,limit alcohol; stress reduction daily
+21,f,27.7,yes,yes,3,6,dry,outdoor,no,no,no,no,yes,balanced,9,2,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management
+24,m,25.9,no,yes,9,5,temperate,outdoor,no,no,no,no,yes,balanced,6,3,moderate,limit alcohol; stress reduction daily
+69,f,30.1,no,no,4,8,cold,outdoor,no,yes,no,no,yes,nonveg,6,0,mild,humidifier & lukewarm showers; weight management
+61,f,34.5,no,no,6,7,humid,indoor,yes,no,yes,no,yes,balanced,9,0,moderate,weight management; stress reduction daily
+34,f,21.9,no,yes,4,5,temperate,indoor,yes,no,yes,yes,yes,mixed,9,3,moderate,limit alcohol; avoid harsh soaps
+49,f,23.6,no,no,2,6,humid,indoor,no,yes,no,yes,yes,mixed,6,4,mild,avoid harsh soaps
+25,f,31.1,no,no,7,9,dry,outdoor,yes,no,no,yes,yes,balanced,3,2,mild,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+60,f,22.7,yes,no,7,6,humid,indoor,yes,no,no,yes,yes,veg,9,2,moderate,stop smoking; avoid harsh soaps; stress reduction daily
+33,f,30.6,no,yes,2,7,humid,indoor,yes,yes,no,no,yes,mixed,5,1,mild,limit alcohol; weight management
+53,m,36.3,no,yes,8,7,dry,outdoor,yes,no,no,yes,yes,balanced,7,4,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+31,f,33.3,no,no,9,8,temperate,indoor,yes,no,yes,yes,yes,mixed,3,0,mild,avoid harsh soaps; weight management; stress reduction daily
+27,m,26.9,no,no,3,5,temperate,outdoor,yes,no,no,no,yes,balanced,9,5,moderate,maintain routine & hydration
+69,m,37.3,no,no,4,6,dry,outdoor,no,yes,no,no,no,balanced,3,3,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+19,m,30.7,yes,yes,8,9,humid,indoor,yes,yes,no,no,yes,mixed,8,5,moderate,limit alcohol; stop smoking; weight management; stress reduction daily
+31,m,26.5,yes,no,9,7,dry,indoor,yes,no,no,no,yes,mixed,0,5,moderate,stop smoking; humidifier & lukewarm showers; stress reduction daily
+70,m,30.6,no,no,9,9,humid,indoor,no,yes,no,no,yes,balanced,9,3,mild,weight management; stress reduction daily
+53,m,21.4,yes,no,3,7,dry,indoor,yes,no,no,no,no,mixed,8,2,moderate,stop smoking; use emollients twice daily; humidifier & lukewarm showers
+49,f,35.1,no,no,4,8,cold,outdoor,yes,yes,no,no,yes,balanced,8,1,mild,humidifier & lukewarm showers; weight management
+24,f,36.0,no,no,8,6,dry,indoor,no,no,no,no,yes,veg,7,3,moderate,humidifier & lukewarm showers; weight management; stress reduction daily
+62,f,28.4,no,yes,8,6,humid,indoor,yes,no,yes,no,yes,mixed,8,1,moderate,limit alcohol; weight management; stress reduction daily
+70,f,26.0,no,no,3,6,temperate,indoor,no,no,no,no,yes,nonveg,6,1,mild,maintain routine & hydration
+47,f,37.4,yes,no,2,7,cold,indoor,no,no,yes,no,yes,nonveg,6,5,moderate,stop smoking; humidifier & lukewarm showers; weight management
+20,f,19.7,no,no,9,7,temperate,outdoor,yes,no,yes,no,yes,mixed,1,3,mild,stress reduction daily
+29,m,26.2,no,yes,8,9,temperate,indoor,yes,no,no,no,yes,veg,8,4,moderate,limit alcohol; stress reduction daily
+41,f,20.3,yes,yes,5,9,temperate,indoor,no,no,no,no,no,mixed,1,0,mild,limit alcohol; stop smoking; use emollients twice daily
+21,f,37.5,no,no,3,6,humid,outdoor,no,no,no,no,no,mixed,9,1,mild,use emollients twice daily; weight management
+46,m,22.5,no,yes,4,9,dry,indoor,yes,yes,no,no,yes,balanced,6,2,mild,limit alcohol; humidifier & lukewarm showers
+55,m,20.9,no,no,3,9,dry,indoor,no,no,no,no,yes,nonveg,8,0,mild,humidifier & lukewarm showers
+55,m,24.3,no,no,8,5,humid,indoor,yes,yes,no,yes,no,mixed,1,1,mild,avoid harsh soaps; use emollients twice daily; stress reduction daily
+49,m,20.4,no,no,4,5,cold,outdoor,yes,no,no,no,yes,veg,7,1,mild,humidifier & lukewarm showers
+43,m,22.8,yes,no,3,8,humid,indoor,yes,no,no,yes,no,nonveg,6,0,mild,stop smoking; avoid harsh soaps; use emollients twice daily
+23,f,20.3,no,no,8,6,humid,indoor,yes,no,no,no,yes,mixed,2,3,mild,stress reduction daily
+58,m,28.8,no,yes,3,6,temperate,indoor,no,no,no,no,no,balanced,1,3,mild,limit alcohol; use emollients twice daily; weight management
+28,m,35.3,no,no,7,7,temperate,outdoor,no,no,no,no,no,balanced,5,0,mild,use emollients twice daily; weight management; stress reduction daily
+51,f,28.5,yes,no,7,9,temperate,indoor,no,yes,no,no,yes,veg,4,2,mild,stop smoking; weight management; stress reduction daily
+52,f,34.3,no,yes,6,6,dry,indoor,no,no,no,no,yes,balanced,5,1,moderate,limit alcohol; humidifier & lukewarm showers; weight management; stress reduction daily
+55,m,29.8,no,no,5,9,cold,indoor,no,no,yes,no,no,mixed,0,5,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+53,m,28.1,no,yes,2,8,humid,indoor,no,yes,no,no,no,balanced,5,0,mild,limit alcohol; use emollients twice daily; weight management
+53,m,23.7,no,yes,9,8,dry,indoor,no,no,no,no,yes,nonveg,5,5,moderate,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+18,m,36.1,no,yes,7,6,temperate,indoor,yes,yes,no,no,yes,nonveg,7,3,moderate,limit alcohol; weight management; stress reduction daily
+19,m,21.6,no,no,8,5,humid,indoor,yes,no,no,no,no,mixed,5,2,mild,use emollients twice daily; stress reduction daily
+33,m,35.9,yes,no,2,5,humid,outdoor,no,no,yes,no,no,balanced,1,4,moderate,stop smoking; use emollients twice daily; weight management
+22,f,36.9,no,no,8,6,dry,indoor,no,no,no,no,yes,mixed,5,2,moderate,humidifier & lukewarm showers; weight management; stress reduction daily
+56,f,37.0,no,yes,8,7,humid,indoor,no,no,no,no,yes,mixed,4,0,moderate,limit alcohol; weight management; stress reduction daily
+65,m,27.9,no,no,8,9,humid,indoor,no,no,no,yes,yes,mixed,1,0,mild,avoid harsh soaps; weight management; stress reduction daily
+68,m,21.7,no,yes,6,8,humid,indoor,no,no,yes,no,yes,mixed,0,5,mild,limit alcohol; stress reduction daily
+65,m,38.0,yes,yes,7,5,humid,indoor,no,no,no,yes,yes,mixed,7,2,moderate,limit alcohol; stop smoking; avoid harsh soaps; weight management; stress reduction daily
+58,f,22.1,no,yes,8,7,cold,indoor,no,no,no,no,no,mixed,7,4,moderate,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+21,f,33.6,yes,no,7,6,humid,outdoor,no,no,no,no,yes,mixed,1,2,moderate,stop smoking; weight management; stress reduction daily
+57,m,23.5,yes,no,8,6,dry,outdoor,yes,yes,no,no,yes,balanced,8,2,moderate,stop smoking; humidifier & lukewarm showers; stress reduction daily
+22,f,24.3,yes,no,8,9,cold,indoor,yes,no,yes,yes,yes,balanced,1,4,moderate,stop smoking; avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+43,f,25.6,no,no,4,9,humid,indoor,yes,no,yes,no,yes,mixed,4,3,mild,maintain routine & hydration
+40,f,36.8,no,no,7,5,cold,indoor,yes,no,no,yes,yes,balanced,5,0,moderate,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+50,f,22.3,yes,no,4,8,cold,indoor,yes,no,yes,no,yes,mixed,8,2,mild,stop smoking; humidifier & lukewarm showers
+22,f,29.4,no,no,7,8,humid,indoor,yes,no,no,yes,no,mixed,4,0,mild,avoid harsh soaps; use emollients twice daily; weight management; stress reduction daily
+32,f,25.5,yes,no,6,7,humid,indoor,yes,yes,no,no,no,mixed,0,5,moderate,stop smoking; use emollients twice daily; stress reduction daily
+42,m,34.6,no,no,9,5,dry,indoor,yes,no,no,no,no,veg,8,0,moderate,use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+18,f,31.3,no,yes,6,5,dry,indoor,yes,no,no,yes,yes,balanced,5,3,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+34,f,21.4,no,no,6,7,dry,indoor,no,no,yes,no,yes,veg,1,4,mild,humidifier & lukewarm showers; stress reduction daily
+58,m,25.6,no,no,8,5,temperate,indoor,yes,no,no,yes,no,nonveg,9,3,moderate,avoid harsh soaps; use emollients twice daily; stress reduction daily
+62,m,18.3,no,no,8,7,temperate,indoor,no,no,no,no,yes,balanced,8,1,mild,stress reduction daily
+44,f,29.9,no,yes,8,8,cold,indoor,no,yes,no,no,no,mixed,2,2,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+55,f,30.5,no,yes,4,6,cold,indoor,no,no,no,no,no,mixed,2,4,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; weight management
+55,m,36.2,no,no,8,5,temperate,outdoor,yes,no,yes,no,yes,mixed,1,0,moderate,weight management; stress reduction daily
+32,m,27.3,no,no,5,8,humid,indoor,yes,no,no,yes,yes,balanced,9,1,mild,avoid harsh soaps; weight management
+46,f,23.8,no,no,6,7,temperate,indoor,no,yes,no,no,yes,balanced,6,0,mild,stress reduction daily
+35,f,28.6,no,no,6,6,temperate,outdoor,no,yes,yes,yes,yes,veg,5,5,moderate,avoid harsh soaps; weight management; stress reduction daily
+62,m,30.9,no,yes,3,8,cold,indoor,yes,no,no,yes,yes,veg,6,1,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management
+61,f,28.3,no,no,8,7,temperate,indoor,yes,yes,yes,no,yes,balanced,3,0,mild,weight management; stress reduction daily
+27,f,35.3,yes,no,9,9,dry,outdoor,no,no,no,yes,yes,nonveg,2,4,moderate,stop smoking; avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+70,f,24.5,no,no,7,6,dry,indoor,no,no,no,no,yes,mixed,4,0,mild,humidifier & lukewarm showers; stress reduction daily
+26,f,21.3,yes,no,9,8,humid,indoor,yes,no,no,no,yes,balanced,4,2,moderate,stop smoking; stress reduction daily
+58,f,34.7,yes,yes,8,5,dry,indoor,no,no,no,no,yes,balanced,9,0,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management; stress reduction daily
+18,f,27.5,yes,no,5,7,humid,indoor,no,no,no,yes,yes,balanced,4,0,mild,stop smoking; avoid harsh soaps; weight management
+59,f,33.5,yes,yes,5,6,dry,outdoor,yes,no,no,no,yes,balanced,8,5,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management
+38,m,35.1,no,yes,6,5,humid,outdoor,no,no,no,no,no,nonveg,2,5,moderate,limit alcohol; use emollients twice daily; weight management; stress reduction daily
+60,f,22.9,no,no,6,6,humid,indoor,no,no,yes,no,yes,balanced,9,5,mild,stress reduction daily
+29,m,21.2,no,no,7,5,dry,indoor,no,no,no,no,yes,nonveg,6,1,mild,humidifier & lukewarm showers; stress reduction daily
+38,f,20.4,no,no,9,7,humid,indoor,yes,no,yes,no,no,balanced,5,0,mild,use emollients twice daily; stress reduction daily
+36,m,18.1,no,yes,8,6,humid,indoor,no,no,no,no,yes,balanced,3,5,moderate,limit alcohol; stress reduction daily
+47,m,21.1,no,no,3,7,cold,outdoor,yes,no,yes,no,yes,veg,3,1,mild,humidifier & lukewarm showers
+42,f,24.1,no,no,6,7,dry,indoor,yes,yes,no,no,no,balanced,7,3,mild,use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+69,f,21.2,yes,no,3,6,cold,indoor,no,no,yes,no,yes,mixed,4,4,mild,stop smoking; humidifier & lukewarm showers
+23,m,31.3,yes,yes,3,6,dry,outdoor,no,no,no,no,yes,mixed,7,3,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management
+43,m,24.2,no,yes,3,5,humid,indoor,yes,yes,no,no,yes,nonveg,5,0,mild,limit alcohol
+41,m,32.6,no,no,4,5,dry,indoor,yes,no,yes,no,yes,balanced,7,3,moderate,humidifier & lukewarm showers; weight management
+26,f,22.9,no,no,3,6,dry,indoor,no,no,yes,no,yes,mixed,4,5,mild,humidifier & lukewarm showers
+37,m,29.2,no,no,3,7,temperate,outdoor,yes,no,no,yes,yes,balanced,7,3,mild,avoid harsh soaps; weight management
+18,m,27.0,no,yes,5,9,dry,indoor,no,no,no,no,yes,balanced,9,1,mild,limit alcohol; humidifier & lukewarm showers; weight management
+37,m,37.6,no,yes,6,9,humid,indoor,yes,no,no,no,yes,balanced,6,5,moderate,limit alcohol; weight management; stress reduction daily
+34,f,34.5,no,no,6,9,temperate,indoor,no,no,no,no,yes,veg,8,2,mild,weight management; stress reduction daily
+65,m,25.6,no,no,3,7,temperate,indoor,no,yes,no,yes,no,balanced,7,5,mild,avoid harsh soaps; use emollients twice daily
+39,f,30.0,yes,yes,8,8,temperate,indoor,yes,yes,no,no,yes,mixed,1,2,moderate,limit alcohol; stop smoking; weight management; stress reduction daily
+36,m,28.3,no,no,6,5,dry,indoor,yes,no,no,yes,yes,mixed,5,3,moderate,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+56,f,26.5,no,no,6,5,humid,indoor,yes,yes,no,no,yes,balanced,9,2,mild,stress reduction daily
+50,m,30.1,no,no,8,6,dry,outdoor,no,no,no,no,no,mixed,3,2,mild,use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+68,m,20.2,no,yes,9,5,humid,indoor,yes,no,no,yes,yes,mixed,8,3,moderate,limit alcohol; avoid harsh soaps; stress reduction daily
+45,f,34.3,no,yes,8,5,temperate,outdoor,no,no,no,no,yes,veg,6,5,moderate,limit alcohol; weight management; stress reduction daily
+56,f,20.5,no,no,7,7,dry,indoor,no,no,yes,yes,yes,balanced,0,3,mild,avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+49,f,21.8,yes,no,4,9,temperate,outdoor,no,no,no,yes,yes,balanced,1,2,mild,stop smoking; avoid harsh soaps
+66,f,37.9,no,no,4,7,dry,indoor,yes,yes,no,no,yes,mixed,9,4,moderate,humidifier & lukewarm showers; weight management
+18,f,23.2,yes,no,7,6,temperate,indoor,yes,no,no,no,yes,balanced,8,5,moderate,stop smoking; stress reduction daily
+54,m,19.5,no,yes,7,8,cold,indoor,yes,yes,no,no,no,mixed,6,0,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+42,m,30.7,no,no,8,7,humid,indoor,yes,no,yes,no,yes,balanced,9,1,moderate,weight management; stress reduction daily
+69,m,34.0,no,no,6,9,humid,indoor,no,no,no,no,no,veg,7,3,mild,use emollients twice daily; weight management; stress reduction daily
+20,m,36.8,no,no,5,7,dry,indoor,yes,no,no,no,yes,mixed,2,1,mild,humidifier & lukewarm showers; weight management
+40,m,26.2,no,no,7,8,dry,indoor,no,no,no,no,yes,mixed,4,5,mild,humidifier & lukewarm showers; stress reduction daily
+65,f,35.0,no,yes,9,6,humid,outdoor,yes,no,no,yes,yes,mixed,0,5,moderate,limit alcohol; avoid harsh soaps; weight management; stress reduction daily
+60,m,20.9,yes,no,5,9,dry,indoor,yes,no,no,no,no,veg,9,5,moderate,stop smoking; use emollients twice daily; humidifier & lukewarm showers
+56,m,26.4,no,no,2,8,humid,indoor,yes,no,no,no,no,balanced,0,3,mild,use emollients twice daily
+62,m,23.3,no,yes,9,6,temperate,indoor,no,yes,yes,yes,yes,mixed,6,3,moderate,limit alcohol; avoid harsh soaps; stress reduction daily
+37,f,22.2,yes,yes,9,9,temperate,indoor,no,yes,no,yes,yes,veg,4,1,moderate,limit alcohol; stop smoking; avoid harsh soaps; stress reduction daily
+22,m,23.3,no,no,4,9,dry,outdoor,yes,no,no,no,no,mixed,7,5,mild,use emollients twice daily; humidifier & lukewarm showers
+29,m,33.3,yes,no,4,7,cold,indoor,no,yes,no,no,no,balanced,5,5,moderate,stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management
+20,m,33.8,yes,yes,9,8,dry,indoor,no,no,no,yes,no,balanced,5,2,moderate,limit alcohol; stop smoking; avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+30,m,21.2,no,no,5,9,dry,indoor,no,yes,no,no,no,balanced,1,3,mild,use emollients twice daily; humidifier & lukewarm showers
+49,m,34.0,no,no,4,7,dry,indoor,no,no,yes,no,yes,mixed,6,2,mild,humidifier & lukewarm showers; weight management
+52,m,23.6,no,no,4,9,humid,indoor,no,no,no,yes,yes,nonveg,5,1,mild,avoid harsh soaps
+35,f,19.1,yes,yes,6,6,humid,outdoor,no,no,yes,no,no,mixed,0,4,moderate,limit alcohol; stop smoking; use emollients twice daily; stress reduction daily
+38,f,19.3,no,yes,2,8,humid,indoor,no,no,no,no,yes,veg,3,5,mild,limit alcohol
+40,f,32.0,yes,no,2,9,temperate,indoor,no,no,no,no,yes,mixed,2,5,mild,stop smoking; weight management
+37,m,28.3,no,no,5,7,dry,indoor,no,yes,no,no,yes,nonveg,8,2,mild,humidifier & lukewarm showers; weight management
+69,m,36.0,no,no,9,8,humid,indoor,no,no,yes,yes,yes,balanced,6,1,moderate,avoid harsh soaps; weight management; stress reduction daily
+28,f,37.4,no,yes,7,6,temperate,indoor,no,no,no,no,yes,balanced,5,0,moderate,limit alcohol; weight management; stress reduction daily
+46,f,30.8,no,no,2,7,humid,outdoor,yes,yes,no,no,yes,mixed,4,4,mild,weight management
+51,m,37.0,no,no,8,9,temperate,indoor,no,no,no,no,no,balanced,8,5,moderate,use emollients twice daily; weight management; stress reduction daily
+51,m,18.1,no,yes,2,7,temperate,indoor,yes,no,no,no,yes,balanced,9,3,mild,limit alcohol
+50,f,18.1,no,yes,3,7,dry,indoor,yes,no,no,no,no,balanced,7,5,moderate,limit alcohol; use emollients twice daily; humidifier & lukewarm showers
+62,f,34.7,yes,no,9,6,temperate,indoor,yes,no,no,no,yes,mixed,1,2,moderate,stop smoking; weight management; stress reduction daily
+64,f,33.8,yes,no,6,6,dry,outdoor,no,no,no,yes,no,balanced,7,4,moderate,stop smoking; avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+30,f,33.6,yes,no,4,8,temperate,indoor,no,no,no,yes,no,balanced,3,5,moderate,stop smoking; avoid harsh soaps; use emollients twice daily; weight management
+20,m,28.9,yes,yes,4,6,humid,indoor,no,no,no,no,yes,veg,7,5,moderate,limit alcohol; stop smoking; weight management
+69,f,18.5,no,no,3,8,temperate,indoor,yes,yes,no,yes,yes,nonveg,7,5,mild,avoid harsh soaps
+33,f,19.0,no,yes,7,6,temperate,indoor,yes,yes,no,no,no,veg,5,2,moderate,limit alcohol; use emollients twice daily; stress reduction daily
+37,f,32.1,no,no,2,9,dry,indoor,no,no,no,no,yes,balanced,5,4,mild,humidifier & lukewarm showers; weight management
+49,f,21.7,no,yes,6,5,humid,indoor,yes,no,no,no,yes,balanced,3,5,moderate,limit alcohol; stress reduction daily
+67,m,18.8,no,yes,9,9,dry,indoor,no,yes,yes,yes,no,mixed,3,5,moderate,limit alcohol; avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+29,m,36.8,yes,no,6,8,dry,indoor,no,yes,yes,yes,yes,mixed,9,5,moderate,stop smoking; avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+43,m,18.5,no,no,2,7,humid,indoor,no,no,yes,no,yes,mixed,0,5,mild,maintain routine & hydration
+49,m,22.4,no,no,3,9,temperate,outdoor,yes,no,no,no,yes,veg,3,0,mild,maintain routine & hydration
+35,f,33.6,no,yes,2,6,temperate,outdoor,no,yes,no,yes,yes,mixed,1,0,mild,limit alcohol; avoid harsh soaps; weight management
+58,f,34.0,no,yes,8,8,humid,indoor,yes,yes,no,no,yes,mixed,8,0,moderate,limit alcohol; weight management; stress reduction daily
+67,m,18.9,no,no,5,6,temperate,indoor,no,yes,no,no,yes,veg,3,4,mild,maintain routine & hydration
+26,f,27.5,yes,no,7,7,dry,indoor,yes,yes,no,yes,yes,balanced,3,0,moderate,stop smoking; avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+61,m,31.8,yes,no,2,7,dry,outdoor,no,no,no,no,no,mixed,6,3,moderate,stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management
+53,m,28.7,no,no,2,6,temperate,outdoor,no,no,no,no,yes,mixed,1,1,mild,weight management
+19,f,27.5,no,no,3,6,humid,indoor,yes,yes,no,no,yes,mixed,8,0,mild,weight management
+69,f,32.8,no,yes,3,6,dry,indoor,yes,no,no,no,yes,nonveg,9,2,moderate,limit alcohol; humidifier & lukewarm showers; weight management
+40,m,36.2,no,yes,9,5,humid,indoor,no,no,no,yes,yes,mixed,4,2,moderate,limit alcohol; avoid harsh soaps; weight management; stress reduction daily
+63,m,32.8,yes,no,6,7,humid,indoor,no,yes,no,no,no,balanced,7,3,moderate,stop smoking; use emollients twice daily; weight management; stress reduction daily
+61,f,29.5,no,yes,2,8,cold,indoor,yes,no,no,yes,yes,balanced,9,1,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management
+21,f,32.7,no,no,9,6,dry,indoor,yes,yes,no,yes,no,balanced,9,5,moderate,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+32,m,26.7,no,yes,4,6,humid,indoor,no,no,no,no,yes,balanced,9,3,mild,limit alcohol
+58,f,28.2,yes,no,4,7,dry,indoor,no,yes,no,no,no,balanced,5,1,mild,stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management
+47,f,21.8,yes,no,5,9,dry,outdoor,yes,no,no,yes,yes,nonveg,6,3,moderate,stop smoking; avoid harsh soaps; humidifier & lukewarm showers
+51,m,23.2,no,no,4,7,humid,indoor,yes,no,no,no,yes,balanced,8,0,mild,maintain routine & hydration
+55,f,28.4,no,no,2,7,temperate,outdoor,no,no,no,yes,no,mixed,7,3,mild,avoid harsh soaps; use emollients twice daily; weight management
+27,f,35.3,no,yes,3,8,temperate,indoor,no,no,no,yes,yes,balanced,3,5,moderate,limit alcohol; avoid harsh soaps; weight management
+45,f,36.9,no,yes,4,6,dry,indoor,no,no,no,no,yes,nonveg,1,4,moderate,limit alcohol; humidifier & lukewarm showers; weight management
+59,f,30.7,no,yes,4,7,dry,outdoor,no,no,yes,no,no,balanced,7,0,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; weight management
+69,f,32.2,no,no,9,6,dry,indoor,yes,no,no,yes,yes,mixed,7,1,moderate,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+60,f,33.0,no,yes,2,8,cold,indoor,yes,yes,no,no,no,mixed,3,5,moderate,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; weight management
+28,m,23.6,no,yes,9,5,dry,indoor,no,no,no,no,yes,balanced,2,5,moderate,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+56,m,31.3,no,no,6,9,humid,indoor,no,yes,no,no,yes,balanced,2,3,mild,weight management; stress reduction daily
+22,f,36.1,yes,no,7,8,dry,outdoor,no,no,no,no,yes,balanced,3,1,moderate,stop smoking; humidifier & lukewarm showers; weight management; stress reduction daily
+30,m,37.7,no,yes,2,8,dry,indoor,yes,no,no,yes,yes,mixed,0,1,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management
+30,m,27.5,no,yes,2,5,temperate,indoor,yes,no,no,yes,yes,mixed,6,4,moderate,limit alcohol; avoid harsh soaps; weight management
+30,f,37.5,no,no,2,5,temperate,indoor,no,no,no,yes,no,balanced,7,1,moderate,avoid harsh soaps; use emollients twice daily; weight management
+23,m,31.5,no,no,5,5,dry,indoor,no,no,no,no,no,balanced,3,4,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+67,m,37.2,yes,no,2,9,humid,indoor,yes,no,no,no,yes,mixed,2,3,moderate,stop smoking; weight management
+50,m,23.1,no,yes,4,6,temperate,indoor,no,no,no,no,yes,veg,2,4,mild,limit alcohol
+68,m,32.0,no,no,4,9,dry,indoor,no,no,no,no,yes,balanced,3,0,mild,humidifier & lukewarm showers; weight management
+55,m,34.8,no,yes,4,5,humid,indoor,yes,no,no,no,yes,mixed,0,0,mild,limit alcohol; weight management
+61,m,25.2,yes,yes,4,6,humid,indoor,yes,no,no,yes,yes,nonveg,3,0,moderate,limit alcohol; stop smoking; avoid harsh soaps
+26,m,22.3,no,yes,2,5,temperate,outdoor,no,no,yes,yes,no,veg,3,1,mild,limit alcohol; avoid harsh soaps; use emollients twice daily
+63,m,32.0,yes,yes,4,7,dry,outdoor,no,no,no,yes,yes,balanced,9,3,moderate,limit alcohol; stop smoking; avoid harsh soaps; humidifier & lukewarm showers; weight management
+23,f,28.8,no,yes,9,7,temperate,outdoor,no,no,no,no,yes,mixed,7,0,mild,limit alcohol; weight management; stress reduction daily
+70,m,23.8,no,no,2,5,humid,indoor,no,no,no,no,yes,nonveg,9,1,mild,maintain routine & hydration
+51,m,27.5,no,yes,9,9,dry,indoor,no,no,no,yes,no,balanced,1,5,moderate,limit alcohol; avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+60,m,32.8,no,yes,9,8,dry,outdoor,yes,no,no,no,yes,mixed,9,4,moderate,limit alcohol; humidifier & lukewarm showers; weight management; stress reduction daily
+42,m,19.2,no,no,8,9,dry,outdoor,no,yes,no,no,yes,mixed,2,4,mild,humidifier & lukewarm showers; stress reduction daily
+22,f,31.6,no,no,6,7,humid,indoor,yes,no,no,yes,no,nonveg,8,3,moderate,avoid harsh soaps; use emollients twice daily; weight management; stress reduction daily
+61,f,34.9,no,yes,4,5,cold,indoor,no,no,no,no,yes,mixed,8,2,moderate,limit alcohol; humidifier & lukewarm showers; weight management
+34,m,29.8,no,yes,2,5,humid,outdoor,yes,no,no,no,no,balanced,8,0,mild,limit alcohol; use emollients twice daily; weight management
+54,f,34.0,no,yes,9,5,humid,outdoor,yes,no,no,yes,yes,balanced,9,1,moderate,limit alcohol; avoid harsh soaps; weight management; stress reduction daily
+64,m,27.5,yes,yes,3,7,humid,outdoor,yes,no,no,no,no,balanced,0,5,moderate,limit alcohol; stop smoking; use emollients twice daily; weight management
+38,m,29.9,no,yes,7,6,humid,indoor,yes,no,no,no,no,mixed,1,2,moderate,limit alcohol; use emollients twice daily; weight management; stress reduction daily
+32,f,35.0,no,no,5,5,temperate,outdoor,no,no,no,no,yes,balanced,2,4,mild,weight management
+30,m,19.0,no,yes,8,5,dry,outdoor,yes,no,no,yes,yes,mixed,3,3,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+51,f,37.7,no,no,6,7,humid,indoor,no,no,no,yes,yes,veg,1,0,mild,avoid harsh soaps; weight management; stress reduction daily
+49,f,31.4,no,no,4,8,temperate,indoor,no,yes,no,yes,yes,veg,4,3,mild,avoid harsh soaps; weight management
+46,m,25.5,yes,yes,3,7,cold,indoor,yes,no,no,no,no,balanced,4,1,moderate,limit alcohol; stop smoking; use emollients twice daily; humidifier & lukewarm showers
+51,f,33.7,yes,no,9,8,humid,indoor,yes,yes,yes,no,yes,mixed,4,0,moderate,stop smoking; weight management; stress reduction daily
+63,f,32.6,yes,no,6,8,dry,indoor,yes,yes,yes,no,no,mixed,8,3,moderate,stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+55,f,37.9,no,no,5,7,humid,indoor,yes,no,no,yes,yes,veg,1,1,moderate,avoid harsh soaps; weight management
+32,f,36.2,no,no,3,5,humid,indoor,no,yes,no,no,yes,balanced,3,4,mild,weight management
+70,f,28.3,no,yes,5,7,dry,indoor,yes,no,no,yes,yes,balanced,4,4,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management
+27,m,19.9,no,no,9,6,temperate,outdoor,no,no,no,no,no,mixed,4,4,mild,use emollients twice daily; stress reduction daily
+57,f,27.6,yes,yes,7,8,dry,outdoor,no,no,no,no,no,balanced,8,4,moderate,limit alcohol; stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+70,m,32.6,yes,no,5,7,temperate,indoor,yes,no,yes,no,no,mixed,6,4,moderate,stop smoking; use emollients twice daily; weight management
+25,m,30.9,no,no,6,9,humid,outdoor,yes,no,no,no,yes,veg,7,1,mild,weight management; stress reduction daily
+42,f,24.2,no,yes,2,8,temperate,indoor,yes,no,no,no,no,mixed,8,5,mild,limit alcohol; use emollients twice daily
+29,f,30.5,no,no,8,5,cold,indoor,no,yes,no,yes,yes,mixed,0,2,mild,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+64,f,26.4,no,no,6,8,humid,indoor,no,no,no,no,yes,mixed,0,5,mild,stress reduction daily
+24,m,30.3,no,no,3,8,temperate,indoor,yes,no,no,yes,yes,mixed,6,0,mild,avoid harsh soaps; weight management
+47,m,31.5,no,yes,3,6,humid,indoor,no,yes,no,no,no,mixed,2,5,mild,limit alcohol; use emollients twice daily; weight management
+64,m,24.6,no,yes,6,8,dry,indoor,yes,no,no,no,yes,mixed,4,4,moderate,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+54,m,27.5,no,yes,9,8,dry,indoor,no,no,no,yes,no,mixed,6,5,moderate,limit alcohol; avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+60,f,27.1,no,no,8,7,dry,indoor,no,no,no,yes,yes,nonveg,2,0,mild,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+63,f,35.2,no,yes,5,5,humid,outdoor,no,no,yes,no,yes,balanced,8,1,moderate,limit alcohol; weight management
+45,f,20.9,no,no,7,8,dry,indoor,no,yes,yes,no,yes,balanced,0,4,mild,humidifier & lukewarm showers; stress reduction daily
+20,f,24.0,no,yes,8,7,humid,outdoor,yes,no,no,no,yes,balanced,9,5,moderate,limit alcohol; stress reduction daily
+56,m,28.9,yes,no,9,7,temperate,indoor,yes,yes,no,yes,yes,balanced,3,1,moderate,stop smoking; avoid harsh soaps; weight management; stress reduction daily
+51,f,27.7,no,no,7,6,dry,outdoor,no,no,no,no,yes,mixed,5,2,mild,humidifier & lukewarm showers; weight management; stress reduction daily
+31,f,31.9,no,no,5,8,humid,indoor,yes,no,no,no,yes,mixed,6,4,mild,weight management
+37,f,20.4,no,no,2,6,humid,indoor,yes,no,no,no,yes,nonveg,2,2,mild,maintain routine & hydration
+20,m,32.0,no,yes,2,7,humid,indoor,yes,no,yes,no,no,mixed,1,5,moderate,limit alcohol; use emollients twice daily; weight management
+28,f,19.7,no,no,8,5,dry,indoor,yes,yes,yes,no,no,veg,7,0,mild,use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+64,f,21.3,yes,yes,9,7,dry,indoor,no,no,no,no,no,balanced,9,2,moderate,limit alcohol; stop smoking; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+56,m,20.6,no,no,3,7,dry,indoor,no,no,no,yes,yes,balanced,2,3,mild,avoid harsh soaps; humidifier & lukewarm showers
+29,m,21.0,yes,no,2,5,temperate,outdoor,no,no,no,no,yes,balanced,3,0,mild,stop smoking
+26,m,19.8,no,yes,8,9,dry,indoor,yes,no,no,no,yes,mixed,9,2,moderate,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+44,m,27.0,yes,no,9,7,dry,indoor,yes,yes,no,no,yes,mixed,0,3,moderate,stop smoking; humidifier & lukewarm showers; weight management; stress reduction daily
+54,m,19.9,yes,yes,5,6,cold,indoor,no,no,no,no,no,balanced,9,2,moderate,limit alcohol; stop smoking; use emollients twice daily; humidifier & lukewarm showers
+19,m,25.0,no,no,8,5,temperate,indoor,no,yes,no,yes,yes,mixed,1,3,mild,avoid harsh soaps; stress reduction daily
+24,f,31.3,yes,no,5,7,temperate,indoor,no,no,yes,no,yes,balanced,7,2,moderate,stop smoking; weight management
+61,f,28.3,no,no,3,8,dry,indoor,no,no,no,no,no,balanced,2,0,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+44,m,30.0,no,no,5,8,dry,outdoor,no,no,yes,no,no,veg,9,0,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+24,m,18.9,yes,no,2,5,humid,indoor,no,yes,no,yes,yes,veg,7,5,moderate,stop smoking; avoid harsh soaps
+57,m,29.0,no,no,6,9,dry,indoor,yes,no,yes,no,yes,balanced,2,5,mild,humidifier & lukewarm showers; weight management; stress reduction daily
+57,f,32.9,no,yes,2,7,dry,indoor,no,yes,no,no,yes,mixed,3,3,mild,limit alcohol; humidifier & lukewarm showers; weight management
+27,f,23.1,no,no,9,6,temperate,outdoor,no,yes,no,no,no,mixed,7,3,mild,use emollients twice daily; stress reduction daily
+27,m,20.3,no,no,7,9,cold,outdoor,no,no,no,no,yes,mixed,4,5,mild,humidifier & lukewarm showers; stress reduction daily
+37,m,20.1,no,yes,8,8,dry,indoor,yes,yes,no,no,yes,mixed,3,2,mild,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+39,m,34.5,no,no,8,9,temperate,indoor,no,no,no,yes,no,balanced,0,1,mild,avoid harsh soaps; use emollients twice daily; weight management; stress reduction daily
+25,m,20.6,yes,yes,7,8,temperate,indoor,no,no,no,no,no,balanced,1,1,mild,limit alcohol; stop smoking; use emollients twice daily; stress reduction daily
+18,m,18.2,yes,no,7,7,humid,indoor,yes,no,yes,no,yes,balanced,5,1,mild,stop smoking; stress reduction daily
+44,m,28.3,no,yes,8,7,temperate,outdoor,yes,no,no,no,no,mixed,9,3,moderate,limit alcohol; use emollients twice daily; weight management; stress reduction daily
+25,f,36.6,yes,yes,7,6,cold,indoor,no,no,no,no,yes,mixed,3,4,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management; stress reduction daily
+19,m,23.6,yes,yes,8,6,humid,outdoor,no,no,no,yes,yes,balanced,1,5,moderate,limit alcohol; stop smoking; avoid harsh soaps; stress reduction daily
+24,f,33.9,no,yes,2,7,temperate,indoor,no,no,no,no,yes,nonveg,1,1,mild,limit alcohol; weight management
+68,f,35.7,no,no,4,8,humid,indoor,no,no,no,no,yes,mixed,2,5,mild,weight management
+49,f,22.0,no,no,9,8,temperate,outdoor,no,yes,no,no,no,mixed,8,2,mild,use emollients twice daily; stress reduction daily
+32,f,21.0,yes,no,6,6,temperate,indoor,no,no,yes,no,yes,mixed,5,4,moderate,stop smoking; stress reduction daily
+25,f,37.1,no,no,4,5,temperate,indoor,yes,no,no,no,no,veg,5,0,mild,use emollients twice daily; weight management
+53,f,36.3,no,no,2,9,humid,indoor,no,no,no,no,yes,mixed,0,1,mild,weight management
+35,m,35.7,yes,no,9,5,dry,indoor,no,no,no,yes,no,veg,6,4,moderate,stop smoking; avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+33,m,25.4,no,yes,6,8,temperate,outdoor,yes,no,no,no,yes,veg,8,3,moderate,limit alcohol; stress reduction daily
+31,m,25.3,no,yes,2,5,cold,outdoor,no,no,yes,no,yes,mixed,2,4,mild,limit alcohol; humidifier & lukewarm showers
+21,m,23.0,no,yes,8,6,dry,indoor,yes,no,no,no,yes,mixed,9,2,moderate,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+47,f,23.6,no,yes,7,8,dry,indoor,yes,no,no,yes,yes,veg,7,2,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+68,m,20.4,no,no,6,5,dry,indoor,no,no,no,no,yes,balanced,1,1,mild,humidifier & lukewarm showers; stress reduction daily
+27,m,21.0,yes,no,3,6,dry,indoor,yes,no,no,no,yes,mixed,0,3,mild,stop smoking; humidifier & lukewarm showers
+42,m,38.0,no,no,7,6,temperate,outdoor,no,no,no,no,no,veg,2,1,mild,use emollients twice daily; weight management; stress reduction daily
+46,m,31.9,yes,no,8,9,temperate,indoor,no,no,no,no,yes,mixed,1,3,mild,stop smoking; weight management; stress reduction daily
+35,m,36.0,no,yes,8,9,dry,outdoor,yes,no,no,no,yes,mixed,3,2,moderate,limit alcohol; humidifier & lukewarm showers; weight management; stress reduction daily
+59,f,36.9,no,no,5,5,dry,indoor,yes,no,no,yes,no,mixed,0,2,moderate,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management
+23,f,32.5,no,no,3,7,dry,indoor,no,no,yes,no,no,balanced,2,4,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+64,m,20.9,no,yes,7,5,dry,outdoor,yes,no,yes,no,no,balanced,0,1,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+50,f,22.5,yes,no,4,9,humid,indoor,no,no,yes,yes,yes,mixed,6,5,mild,stop smoking; avoid harsh soaps
+50,f,26.9,no,no,6,7,temperate,indoor,no,no,no,no,no,mixed,3,3,mild,use emollients twice daily; stress reduction daily
+46,f,22.7,yes,yes,5,5,dry,indoor,no,no,no,no,yes,mixed,3,1,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers
+69,m,26.1,no,no,7,7,temperate,indoor,yes,no,no,yes,no,mixed,4,2,mild,avoid harsh soaps; use emollients twice daily; stress reduction daily
+25,f,22.6,no,yes,6,6,humid,outdoor,yes,no,yes,no,yes,balanced,6,5,moderate,limit alcohol; stress reduction daily
+65,f,33.8,no,no,6,6,dry,indoor,no,no,no,yes,yes,mixed,2,4,moderate,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+41,f,36.8,no,no,2,7,dry,indoor,no,no,no,no,no,balanced,5,2,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+35,m,36.8,no,no,9,8,dry,outdoor,no,no,no,no,yes,mixed,4,3,moderate,humidifier & lukewarm showers; weight management; stress reduction daily
+31,m,28.5,yes,yes,5,6,temperate,outdoor,yes,no,no,yes,yes,mixed,6,1,moderate,limit alcohol; stop smoking; avoid harsh soaps; weight management
+19,f,37.9,yes,no,5,5,humid,indoor,yes,no,no,no,no,balanced,6,5,moderate,stop smoking; use emollients twice daily; weight management
+64,f,30.7,no,no,7,6,dry,indoor,yes,no,no,no,no,veg,1,5,moderate,use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+68,f,22.1,no,no,6,7,dry,indoor,yes,no,no,no,yes,balanced,6,2,mild,humidifier & lukewarm showers; stress reduction daily
+67,f,37.0,no,no,2,8,dry,indoor,yes,yes,yes,no,no,mixed,2,3,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+43,f,27.3,no,no,9,5,temperate,indoor,no,no,no,no,yes,veg,7,2,mild,weight management; stress reduction daily
+51,f,27.5,yes,no,3,9,humid,indoor,no,yes,yes,no,no,mixed,0,0,mild,stop smoking; use emollients twice daily; weight management
+42,f,21.9,no,yes,5,6,dry,indoor,yes,no,no,no,yes,nonveg,1,5,moderate,limit alcohol; humidifier & lukewarm showers
+41,m,18.0,no,yes,9,7,dry,indoor,no,yes,no,yes,yes,mixed,4,0,mild,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+46,f,37.3,no,no,3,8,humid,indoor,no,no,no,yes,yes,balanced,0,1,mild,avoid harsh soaps; weight management
+42,f,34.2,yes,no,2,5,temperate,outdoor,yes,no,no,no,yes,nonveg,3,3,moderate,stop smoking; weight management
+29,f,29.3,no,yes,7,5,humid,indoor,yes,no,no,no,no,mixed,8,4,moderate,limit alcohol; use emollients twice daily; weight management; stress reduction daily
+40,m,24.2,yes,no,2,7,cold,indoor,yes,no,no,no,no,veg,1,5,mild,stop smoking; use emollients twice daily; humidifier & lukewarm showers
+69,f,26.9,no,yes,2,6,dry,indoor,yes,no,no,yes,yes,mixed,4,5,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers
+35,m,26.8,no,yes,9,9,humid,indoor,no,no,no,no,no,nonveg,8,2,mild,limit alcohol; use emollients twice daily; stress reduction daily
+37,m,28.8,no,no,5,8,cold,indoor,no,no,no,no,no,mixed,8,5,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+62,f,30.5,no,yes,6,6,temperate,indoor,no,no,no,no,yes,veg,0,3,mild,limit alcohol; weight management; stress reduction daily
+62,m,28.5,no,yes,4,5,humid,indoor,yes,no,yes,no,no,mixed,1,2,mild,limit alcohol; use emollients twice daily; weight management
+55,f,20.3,no,no,9,5,temperate,outdoor,yes,no,no,no,yes,balanced,5,1,mild,stress reduction daily
+32,f,32.7,no,yes,3,6,cold,indoor,no,yes,no,no,yes,mixed,9,1,moderate,limit alcohol; humidifier & lukewarm showers; weight management
+22,m,25.3,no,no,9,7,temperate,indoor,yes,yes,yes,no,yes,mixed,3,4,mild,stress reduction daily
+54,m,27.9,yes,no,4,6,cold,indoor,yes,no,no,no,yes,mixed,3,2,moderate,stop smoking; humidifier & lukewarm showers; weight management
+70,f,33.1,no,yes,6,9,humid,indoor,no,no,yes,no,yes,nonveg,1,4,mild,limit alcohol; weight management; stress reduction daily
+54,f,20.2,yes,no,2,9,dry,outdoor,yes,no,yes,no,no,veg,9,0,mild,stop smoking; use emollients twice daily; humidifier & lukewarm showers
+47,m,34.6,yes,no,7,6,cold,indoor,no,no,no,yes,yes,balanced,3,0,moderate,stop smoking; avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+63,m,29.9,no,no,5,6,dry,indoor,no,yes,no,no,no,mixed,4,5,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+27,m,31.0,yes,no,3,8,humid,indoor,yes,yes,no,no,yes,balanced,2,1,mild,stop smoking; weight management
+37,m,27.1,no,no,2,8,dry,indoor,yes,yes,no,no,no,veg,9,0,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+26,m,36.9,yes,no,3,6,humid,indoor,yes,yes,no,yes,no,nonveg,3,1,moderate,stop smoking; avoid harsh soaps; use emollients twice daily; weight management
+28,f,25.2,no,no,5,6,temperate,indoor,no,no,no,no,yes,balanced,6,0,mild,maintain routine & hydration
+50,f,31.1,yes,no,2,8,temperate,outdoor,no,no,yes,no,yes,veg,3,2,mild,stop smoking; weight management
+59,f,24.0,no,yes,7,7,temperate,indoor,no,yes,yes,no,no,veg,0,2,mild,limit alcohol; use emollients twice daily; stress reduction daily
+55,m,20.6,no,no,9,6,humid,indoor,no,no,no,no,yes,balanced,6,3,mild,stress reduction daily
+42,m,22.9,no,no,4,9,dry,indoor,yes,no,no,yes,no,mixed,4,1,mild,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers
+42,m,22.3,no,yes,7,9,humid,indoor,yes,no,yes,no,yes,balanced,2,2,mild,limit alcohol; stress reduction daily
+43,m,32.0,no,no,3,6,cold,indoor,no,no,no,no,yes,mixed,1,2,mild,humidifier & lukewarm showers; weight management
+40,f,26.6,no,no,8,6,humid,indoor,no,no,no,no,no,balanced,1,4,mild,use emollients twice daily; stress reduction daily
+35,f,33.2,no,no,5,6,dry,indoor,yes,yes,no,no,yes,mixed,4,5,moderate,humidifier & lukewarm showers; weight management
+33,f,37.5,no,no,4,6,humid,indoor,yes,yes,no,no,yes,mixed,1,4,moderate,weight management
+25,m,19.7,no,no,2,8,dry,indoor,no,no,no,yes,yes,veg,5,4,mild,avoid harsh soaps; humidifier & lukewarm showers
+28,f,25.5,no,no,6,8,dry,indoor,yes,no,no,yes,yes,mixed,9,5,moderate,avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+57,m,18.3,yes,no,5,5,humid,indoor,no,no,no,no,yes,mixed,0,2,mild,stop smoking
+18,m,23.8,no,no,2,6,dry,indoor,no,yes,no,no,no,balanced,6,1,mild,use emollients twice daily; humidifier & lukewarm showers
+58,f,32.0,no,no,4,6,humid,indoor,yes,no,no,no,no,mixed,4,2,mild,use emollients twice daily; weight management
+38,m,22.0,no,yes,7,5,humid,indoor,no,yes,yes,yes,yes,balanced,2,3,mild,limit alcohol; avoid harsh soaps; stress reduction daily
+48,m,21.4,no,no,9,5,dry,indoor,no,no,no,no,no,veg,3,5,mild,use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+47,f,27.7,no,no,8,6,humid,indoor,yes,no,no,no,no,mixed,1,0,mild,use emollients twice daily; weight management; stress reduction daily
+52,m,29.7,yes,no,4,5,temperate,indoor,no,no,no,no,yes,nonveg,1,1,mild,stop smoking; weight management
+69,m,36.4,yes,no,3,5,cold,indoor,yes,no,no,yes,no,nonveg,1,1,moderate,stop smoking; avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management
+20,m,18.6,no,no,3,8,dry,outdoor,yes,no,no,no,yes,mixed,4,2,mild,humidifier & lukewarm showers
+20,f,37.0,no,no,7,7,cold,indoor,no,no,no,no,yes,mixed,5,4,moderate,humidifier & lukewarm showers; weight management; stress reduction daily
+39,m,29.4,yes,no,5,9,dry,indoor,no,no,no,no,yes,veg,9,3,moderate,stop smoking; humidifier & lukewarm showers; weight management
+27,f,32.8,yes,no,9,6,cold,indoor,yes,yes,yes,no,yes,mixed,4,4,moderate,stop smoking; humidifier & lukewarm showers; weight management; stress reduction daily
+39,f,29.9,no,no,9,8,temperate,indoor,no,no,no,no,yes,nonveg,8,5,moderate,weight management; stress reduction daily
+19,m,32.8,no,no,6,9,dry,outdoor,yes,no,no,no,no,balanced,2,0,mild,use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+18,m,36.4,no,no,4,6,dry,outdoor,yes,no,no,yes,yes,balanced,3,2,moderate,avoid harsh soaps; humidifier & lukewarm showers; weight management
+56,m,27.3,yes,no,5,9,cold,indoor,yes,no,yes,no,no,balanced,4,2,mild,stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management
+68,m,22.4,no,no,7,5,temperate,indoor,no,no,no,no,yes,balanced,3,3,mild,stress reduction daily
+63,m,34.9,no,no,2,6,dry,indoor,no,no,no,yes,no,mixed,0,5,mild,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management
+64,m,29.9,yes,yes,4,7,dry,indoor,yes,no,no,no,yes,veg,6,3,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management
+53,m,22.2,no,yes,2,5,dry,indoor,no,no,no,no,yes,mixed,0,3,mild,limit alcohol; humidifier & lukewarm showers
+18,m,28.1,yes,no,4,7,humid,indoor,no,no,no,yes,yes,mixed,2,1,mild,stop smoking; avoid harsh soaps; weight management
+51,m,25.6,no,yes,6,9,humid,outdoor,no,no,yes,no,yes,mixed,5,1,mild,limit alcohol; stress reduction daily
+61,m,34.4,no,no,9,8,humid,indoor,yes,yes,no,yes,yes,nonveg,8,0,moderate,avoid harsh soaps; weight management; stress reduction daily
+57,f,20.0,no,yes,2,8,humid,indoor,yes,yes,no,no,yes,balanced,8,0,mild,limit alcohol
+38,f,29.3,yes,yes,8,8,dry,outdoor,no,yes,no,no,yes,mixed,2,5,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; weight management; stress reduction daily
+70,m,21.2,no,yes,8,5,temperate,indoor,no,no,no,no,no,veg,1,1,mild,limit alcohol; use emollients twice daily; stress reduction daily
+52,m,30.3,no,yes,5,6,humid,indoor,yes,no,no,yes,no,mixed,2,2,moderate,limit alcohol; avoid harsh soaps; use emollients twice daily; weight management
+24,m,34.1,yes,no,5,5,temperate,outdoor,no,yes,no,no,yes,mixed,1,1,mild,stop smoking; weight management
+25,m,37.0,no,no,5,8,dry,indoor,no,no,no,no,yes,mixed,2,1,mild,humidifier & lukewarm showers; weight management
+41,f,29.0,no,yes,8,8,temperate,indoor,no,no,no,no,yes,mixed,1,4,mild,limit alcohol; weight management; stress reduction daily
+43,m,20.5,no,no,6,7,dry,indoor,no,no,no,yes,yes,nonveg,0,0,mild,avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+37,m,37.3,no,yes,3,6,humid,indoor,yes,no,no,yes,yes,veg,3,0,moderate,limit alcohol; avoid harsh soaps; weight management
+20,f,33.6,no,no,9,9,temperate,indoor,no,no,no,yes,yes,mixed,2,2,mild,avoid harsh soaps; weight management; stress reduction daily
+30,m,21.1,no,no,8,5,humid,indoor,no,yes,yes,yes,yes,mixed,4,0,mild,avoid harsh soaps; stress reduction daily
+47,m,23.3,no,no,8,5,dry,indoor,no,no,no,yes,yes,veg,0,5,mild,avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+54,m,30.8,no,no,6,9,temperate,outdoor,no,no,no,no,yes,mixed,5,2,mild,weight management; stress reduction daily
+19,f,26.3,yes,yes,5,8,dry,outdoor,no,no,no,no,no,mixed,6,3,moderate,limit alcohol; stop smoking; use emollients twice daily; humidifier & lukewarm showers
+54,m,35.2,yes,no,3,7,humid,outdoor,yes,no,no,no,no,mixed,9,5,moderate,stop smoking; use emollients twice daily; weight management
+46,m,18.9,no,no,6,7,humid,indoor,no,no,no,no,no,mixed,6,2,mild,use emollients twice daily; stress reduction daily
+38,m,36.1,yes,yes,4,8,temperate,outdoor,yes,no,no,no,yes,nonveg,5,3,moderate,limit alcohol; stop smoking; weight management
+50,m,18.4,no,yes,4,5,humid,indoor,yes,no,no,no,yes,veg,7,0,mild,limit alcohol
+55,f,18.3,no,yes,2,8,temperate,outdoor,no,no,no,no,yes,mixed,8,5,mild,limit alcohol
+43,m,35.5,no,no,2,8,dry,outdoor,yes,no,no,no,no,mixed,5,2,mild,use emollients twice daily; humidifier & lukewarm showers; weight management
+36,f,28.3,yes,no,3,8,temperate,indoor,yes,no,yes,yes,no,balanced,0,2,mild,stop smoking; avoid harsh soaps; use emollients twice daily; weight management
+45,f,23.5,no,yes,5,7,temperate,indoor,yes,no,no,no,yes,veg,2,3,mild,limit alcohol
+32,f,35.0,no,yes,6,8,temperate,indoor,no,no,no,no,yes,mixed,0,3,mild,limit alcohol; weight management; stress reduction daily
+52,f,18.9,yes,no,2,6,temperate,indoor,yes,yes,no,yes,no,mixed,4,2,mild,stop smoking; avoid harsh soaps; use emollients twice daily
+23,m,26.6,yes,no,5,8,cold,indoor,yes,no,no,no,no,balanced,9,1,moderate,stop smoking; use emollients twice daily; humidifier & lukewarm showers
+51,m,24.0,yes,no,6,9,dry,indoor,no,no,no,no,no,mixed,4,3,mild,stop smoking; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+19,f,35.5,no,no,8,8,humid,indoor,no,no,no,no,no,mixed,2,0,mild,use emollients twice daily; weight management; stress reduction daily
+65,f,22.2,no,yes,3,7,dry,indoor,yes,yes,no,no,no,mixed,6,0,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers
+18,m,25.7,yes,no,9,7,cold,indoor,yes,no,no,no,yes,balanced,1,1,mild,stop smoking; humidifier & lukewarm showers; stress reduction daily
+46,m,27.2,yes,no,5,6,dry,indoor,yes,yes,no,no,yes,mixed,8,4,moderate,stop smoking; humidifier & lukewarm showers; weight management
+56,f,32.9,no,no,7,8,temperate,indoor,no,no,no,no,no,balanced,5,4,mild,use emollients twice daily; weight management; stress reduction daily
+62,m,22.2,no,no,7,8,temperate,indoor,no,no,yes,no,yes,veg,3,5,mild,stress reduction daily
+46,m,21.6,no,yes,5,9,dry,indoor,yes,yes,yes,no,yes,mixed,5,2,mild,limit alcohol; humidifier & lukewarm showers
+67,m,30.4,no,no,3,5,humid,indoor,yes,no,yes,yes,yes,mixed,9,0,mild,avoid harsh soaps; weight management
+33,m,27.4,no,yes,3,7,humid,indoor,yes,no,yes,no,yes,mixed,3,1,mild,limit alcohol; weight management
+22,f,27.2,yes,no,3,6,dry,outdoor,yes,no,no,no,no,veg,5,1,mild,stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management
+35,f,21.8,yes,yes,7,9,dry,indoor,yes,no,yes,no,yes,mixed,2,2,moderate,limit alcohol; stop smoking; humidifier & lukewarm showers; stress reduction daily
+51,m,18.2,no,no,2,7,humid,indoor,no,yes,no,no,yes,mixed,5,2,mild,maintain routine & hydration
+34,f,33.7,no,no,4,6,dry,indoor,yes,no,yes,no,yes,nonveg,8,4,moderate,humidifier & lukewarm showers; weight management
+67,m,34.9,no,yes,4,7,humid,indoor,yes,no,no,no,yes,veg,6,5,moderate,limit alcohol; weight management
+63,m,36.1,no,yes,5,5,humid,indoor,yes,no,no,no,yes,mixed,5,5,moderate,limit alcohol; weight management
+65,m,18.5,no,no,7,7,humid,indoor,yes,no,no,no,no,mixed,3,1,mild,use emollients twice daily; stress reduction daily
+50,m,32.3,no,yes,3,9,temperate,indoor,no,no,yes,no,yes,mixed,2,5,mild,limit alcohol; weight management
+48,m,32.4,yes,yes,6,8,dry,outdoor,yes,no,yes,no,no,mixed,6,5,moderate,limit alcohol; stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+31,f,32.3,yes,no,8,7,humid,outdoor,no,no,yes,yes,no,mixed,6,1,moderate,stop smoking; avoid harsh soaps; use emollients twice daily; weight management; stress reduction daily
+39,m,30.4,no,yes,7,8,cold,outdoor,no,no,yes,yes,yes,mixed,8,0,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+47,f,25.2,no,no,6,8,dry,outdoor,yes,no,no,no,yes,balanced,4,5,mild,humidifier & lukewarm showers; stress reduction daily
+57,f,24.9,no,no,8,7,temperate,indoor,no,no,no,no,no,veg,8,3,mild,use emollients twice daily; stress reduction daily
+31,m,21.5,yes,no,3,8,temperate,indoor,no,no,no,yes,no,balanced,7,4,mild,stop smoking; avoid harsh soaps; use emollients twice daily
+26,m,21.8,no,no,4,7,humid,indoor,no,no,no,no,yes,veg,1,5,mild,maintain routine & hydration
+53,f,32.5,no,yes,8,7,humid,indoor,yes,yes,yes,no,yes,balanced,2,2,moderate,limit alcohol; weight management; stress reduction daily
+63,f,27.3,no,yes,5,5,temperate,indoor,no,no,no,no,yes,balanced,4,1,mild,limit alcohol; weight management
+59,m,18.8,no,yes,5,9,dry,outdoor,no,no,no,no,yes,veg,6,1,mild,limit alcohol; humidifier & lukewarm showers
+64,m,29.5,no,no,8,7,dry,indoor,yes,no,no,no,yes,mixed,7,1,mild,humidifier & lukewarm showers; weight management; stress reduction daily
+45,m,28.2,no,no,5,8,temperate,indoor,yes,no,no,no,yes,mixed,1,4,mild,weight management
+57,m,21.5,no,yes,9,6,dry,indoor,no,no,yes,no,yes,nonveg,8,1,moderate,limit alcohol; humidifier & lukewarm showers; stress reduction daily
+70,f,20.3,no,no,5,9,humid,indoor,no,no,no,no,yes,mixed,1,2,mild,maintain routine & hydration
+39,m,25.9,yes,no,8,6,dry,indoor,yes,no,no,yes,yes,mixed,5,3,moderate,stop smoking; avoid harsh soaps; humidifier & lukewarm showers; stress reduction daily
+38,f,31.7,no,no,7,8,dry,outdoor,yes,no,no,no,yes,balanced,0,1,mild,humidifier & lukewarm showers; weight management; stress reduction daily
+63,f,35.6,no,yes,3,9,cold,indoor,no,yes,no,no,yes,mixed,8,2,mild,limit alcohol; humidifier & lukewarm showers; weight management
+47,f,35.7,yes,yes,3,6,humid,outdoor,yes,no,yes,yes,yes,veg,5,1,moderate,limit alcohol; stop smoking; avoid harsh soaps; weight management
+63,m,37.7,yes,no,3,8,temperate,indoor,yes,yes,no,no,yes,mixed,7,2,moderate,stop smoking; weight management
+58,m,31.9,yes,no,7,5,dry,outdoor,no,no,no,no,no,mixed,9,3,moderate,stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+27,f,30.2,no,no,4,7,temperate,indoor,yes,no,yes,no,no,balanced,4,1,mild,use emollients twice daily; weight management
+59,f,31.6,yes,yes,7,8,temperate,indoor,no,yes,yes,no,yes,balanced,7,0,moderate,limit alcohol; stop smoking; weight management; stress reduction daily
+30,m,27.3,no,no,2,5,humid,indoor,no,no,no,no,yes,veg,3,2,mild,weight management
+53,f,27.6,yes,yes,6,6,dry,outdoor,no,no,no,yes,no,balanced,9,4,moderate,limit alcohol; stop smoking; avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+67,m,23.0,no,yes,2,6,dry,indoor,yes,no,no,yes,yes,balanced,1,5,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers
+55,m,22.1,no,yes,8,7,dry,indoor,no,no,yes,no,no,mixed,8,0,mild,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; stress reduction daily
+27,f,26.7,yes,no,5,7,temperate,outdoor,no,no,no,yes,yes,balanced,4,5,moderate,stop smoking; avoid harsh soaps
+24,f,31.2,no,yes,4,5,temperate,outdoor,yes,no,no,no,no,balanced,5,0,mild,limit alcohol; use emollients twice daily; weight management
+45,f,25.3,no,no,6,6,temperate,indoor,no,yes,no,yes,yes,balanced,2,1,mild,avoid harsh soaps; stress reduction daily
+41,m,22.6,no,no,8,8,temperate,indoor,yes,no,no,yes,yes,mixed,1,4,mild,avoid harsh soaps; stress reduction daily
+42,m,20.1,no,no,4,6,dry,indoor,no,no,no,no,yes,mixed,6,0,mild,humidifier & lukewarm showers
+65,f,22.9,no,yes,2,9,humid,outdoor,yes,no,no,no,yes,balanced,4,1,mild,limit alcohol
+33,f,36.5,no,no,2,6,humid,outdoor,no,yes,no,no,yes,balanced,6,0,mild,weight management
+69,m,27.4,no,yes,2,6,temperate,indoor,yes,no,no,yes,yes,veg,5,3,moderate,limit alcohol; avoid harsh soaps; weight management
+40,m,28.3,yes,yes,6,8,dry,outdoor,no,yes,yes,no,no,mixed,2,4,moderate,limit alcohol; stop smoking; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+26,f,23.4,no,yes,8,5,temperate,indoor,no,no,yes,yes,no,mixed,0,2,mild,limit alcohol; avoid harsh soaps; use emollients twice daily; stress reduction daily
+59,m,21.2,yes,yes,6,9,temperate,indoor,no,no,no,yes,no,mixed,5,5,moderate,limit alcohol; stop smoking; avoid harsh soaps; use emollients twice daily; stress reduction daily
+48,f,32.5,no,no,6,9,humid,indoor,yes,no,no,no,yes,nonveg,0,2,mild,weight management; stress reduction daily
+54,f,27.6,no,no,4,5,dry,outdoor,yes,no,no,yes,yes,nonveg,3,2,mild,avoid harsh soaps; humidifier & lukewarm showers; weight management
+29,m,34.9,no,yes,8,6,dry,indoor,no,no,no,yes,yes,nonveg,8,2,moderate,limit alcohol; avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+32,f,26.8,no,no,3,8,cold,indoor,no,no,yes,yes,no,balanced,5,0,mild,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers
+48,m,33.7,yes,no,4,6,temperate,outdoor,no,no,no,no,yes,mixed,1,4,moderate,stop smoking; weight management
+60,f,22.6,no,no,3,7,humid,indoor,no,no,no,no,yes,mixed,5,2,mild,maintain routine & hydration
+39,f,24.3,yes,no,4,9,dry,indoor,no,no,no,no,yes,veg,0,0,mild,stop smoking; humidifier & lukewarm showers
+50,m,22.9,yes,no,8,8,dry,indoor,no,no,no,no,yes,veg,7,2,mild,stop smoking; humidifier & lukewarm showers; stress reduction daily
+53,m,22.0,no,no,4,6,humid,outdoor,yes,yes,no,no,no,mixed,8,0,mild,use emollients twice daily
+68,f,36.1,no,yes,6,5,dry,outdoor,no,no,no,no,no,mixed,1,5,moderate,limit alcohol; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+39,f,35.3,yes,yes,9,8,humid,indoor,yes,no,no,yes,yes,nonveg,6,3,moderate,limit alcohol; stop smoking; avoid harsh soaps; weight management; stress reduction daily
+35,m,29.8,no,no,8,7,cold,indoor,no,no,no,yes,no,mixed,6,5,moderate,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers; weight management; stress reduction daily
+19,f,32.7,no,yes,6,5,temperate,indoor,no,no,no,yes,no,mixed,3,2,moderate,limit alcohol; avoid harsh soaps; use emollients twice daily; weight management; stress reduction daily
+23,m,19.1,no,no,3,9,humid,indoor,yes,yes,no,no,no,mixed,3,2,mild,use emollients twice daily
+30,m,32.8,no,no,8,9,cold,outdoor,yes,yes,no,yes,yes,balanced,0,5,moderate,avoid harsh soaps; humidifier & lukewarm showers; weight management; stress reduction daily
+19,f,28.7,no,no,3,7,temperate,indoor,yes,no,yes,no,yes,balanced,5,5,mild,weight management
+49,f,20.2,no,no,5,8,dry,indoor,no,no,no,yes,no,balanced,4,0,mild,avoid harsh soaps; use emollients twice daily; humidifier & lukewarm showers
+60,f,37.3,yes,no,2,9,humid,indoor,no,no,no,no,yes,balanced,4,5,moderate,stop smoking; weight management

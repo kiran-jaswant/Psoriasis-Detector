@@ -19,10 +19,10 @@ ReactDOM.createRoot(root).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>} />
+        <Route path="/dashboard" element={ <Dashboard /> } />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/consult" element={<ProtectedRoute><Consultation /></ProtectedRoute>} />
+        <Route path="/consult" element={<Consultation />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
